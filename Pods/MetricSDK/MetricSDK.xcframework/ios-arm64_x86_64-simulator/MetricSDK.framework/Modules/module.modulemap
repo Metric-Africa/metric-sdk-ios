@@ -1,0 +1,11 @@
+framework module MetricSDK {
+  umbrella header "MetricSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module MetricSDK.Swift {
+  header "MetricSDK-Swift.h"
+  requires objc
+}
