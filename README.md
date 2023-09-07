@@ -71,8 +71,8 @@ Add an `NSCameraUsageDescription` entry to your app's Info.plist, with the reaso
 
 ### Configuration and Customization
 The `MetricSDKConfiguration` class is used to customise the look of the SDK such as colors and brand image. By default, your 
-SDK envirenment is set to `Environment.sanbox`. Set to `Environment.production` when ready for release.
-Call `MetricService.configure()` and pass in your configuration [Preferably in the `viewDidLoad` of the `ViewController` that will launch the SDK] 
+SDK environment is set to `Environment.sanbox`. Set to `Environment.production` when ready for release.
+Call `MetricService.configure()` and pass in your configuration [Preferably in the `viewDidLoad()` of the `ViewController` that will launch the SDK] 
 
 ```sh
 ...
