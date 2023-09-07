@@ -85,7 +85,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         ...
-        config.environment = Environment.sandbox
+        config.environment = .sandbox //[.production for when you go live.]
         config.brandLogoImageUrl = "htttps://example/image.png"
         config.brandPrimaryColor = "" //eg. #BBBBBB
         MetricService.configure(config)
