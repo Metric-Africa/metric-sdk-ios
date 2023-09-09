@@ -38,7 +38,7 @@ These dependencies will be automatically included via CocoaPods.
 
 
 ## XCode 14.0+ Error
-There's a dynamic linking issue on  macOS/iOS for the newer XCode versions for certain dynamic frameworks. If you ever run into `dyld` error like below,
+There's a dynamic linking issue on  macOS/iOS for the newer XCode versions for certain dynamic frameworks. If you ever run into `dyld` error like below after running `pod install` and trying to run your project,
 
 ```sh
 dyld[532]: Symbol not found: __ZN5swift34swift50override_conformsToProtocolEPKNS_14TargetMetadataINS_9InProcessEEEPKNS_24TargetProtocolDescriptorIS1_EEPFPKNS_18TargetWitnessTableIS1_EES4_S8_E
