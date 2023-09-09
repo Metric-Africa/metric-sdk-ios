@@ -6,13 +6,13 @@ The Metric iOS SDK enables you to integrate Metric into your iOS app. We also ha
 ### Sample App
 We have a sample app that you can use to test the Metric iOS SDK. You can access it on GitHub through the following link: https://github.com/Metric-Africa/metric-sdk-ios
 
-### Prerequisites
+## Prerequisites
 Make sure your system meets the following software requirements:
  - XCode 14+
 - Swift 5.0+
 - iOS 15+
 
-#### Installation via CocoaPods 
+## Installation via CocoaPods 
 Integration with your app is supported via CocoaPods.
 
 > The Metric iOS SDK is distributed as an XCFramework,
@@ -37,7 +37,7 @@ The Metric iOS SDK has a dependency on
 These dependencies will be automatically included via CocoaPods.
 
 
-#### XCode 14.0+ Error
+## XCode 14.0+ Error
 There's a dynamic linking issue on  macOS/iOS for the newer XCode versions for certain dynamic frameworks. If you ever run into `dyld` error like below,
 
 ```sh
@@ -63,7 +63,7 @@ and run the follwing commands
  1. `pod deintegrate`
  2. `pod install`
 
-### Initializing the SDK
+## Initializing the SDK
 
 1. First, import MetricSDK into your project within your AppDelegate class
 
