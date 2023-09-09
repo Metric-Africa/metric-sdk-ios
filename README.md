@@ -36,6 +36,33 @@ The Metric iOS SDK has a dependency on
 
 These dependencies will be automatically included via CocoaPods.
 
+
+#### XCode 14.0+ Error
+There's a dynamic linking issue on  macOS/iOS for the newer XCode versions for certain dynamic frameworks. If you ever run into `dyld` error like below,
+
+```sh
+dyld[532]: Symbol not found: __ZN5swift34swift50override_conformsToProtocolEPKNS_14TargetMetadataINS_9InProcessEEEPKNS_24TargetProtocolDescriptorIS1_EEPFPKNS_18TargetWitnessTableIS1_EES4_S8_E
+  Referenced from: <CF434E50-4753-32B1-BC49-77FF3D123A82> /private/var/containers/Bundle/Application/AD967DEA-F01C-4CC7-A8D3-00A0911EBBC0/SDKSample.app/Frameworks/iProov.framework/iProov
+  Expected in:     <B8F7D7D2-01AE-35BF-B0B7-91D6488B6E35> /private/var/containers/Bundle/Application/AD967DEA-F01C-4CC7-A8D3-00A0911EBBC0/SDKSample.app/Frameworks/Starscream.framework/Starscream
+```
+put the following lines of code at the bottom of your `Podfile`.
+```sh
+...
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
+    end
+  end
+end
+...
+```
+
+and run the follwing commands 
+
+ 1. `pod deintegrate`
+ 2. `pod install`
+
 ### Initializing the SDK
 
 1. First, import MetricSDK into your project within your AppDelegate class
@@ -85,7 +112,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         ...
-        config.environment = .sandbox //[.production for when you go live.]
+        config.environment = Environment.sandbox
         config.brandLogoImageUrl = "htttps://example/image.png"
         config.brandPrimaryColor = "" //eg. #BBBBBB
         MetricService.configure(config)
@@ -118,3 +145,9 @@ class ViewController: UIViewController {
  
  
  ### Listening for Results
+ 
+ In the `viewDidLoad` method of the view controller class from which the sdk was launched, set up a NotificationCe instance
+
+
+
+
