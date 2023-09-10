@@ -135,7 +135,7 @@ import MetricSDK
 class ViewController: UIViewController {
     ...
     @objc private func launchSDKPressed(){
-        let launcher = LaunchSDK(token: "<token here>")
+        let launcher = LaunchMetricSDK(token: "<token here>")
         launcher.modalPresentationStyle = .overCurrentContext
         launcher.modalTransitionStyle = .crossDissolve
         present(launcher, animated: true, completion:nil)
