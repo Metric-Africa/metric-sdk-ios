@@ -145,8 +145,39 @@ class ViewController: UIViewController {
 ```
  
  ### Listening for Results
+ You can leverage MetricSDKs internal notification manager or use your own notification handler. Add a `NotificationCenter` observer to the `viewDidLoad()` of the view controller that launched your SDK. And pass in your @objc marked function as the selector. Eg. In this case we use `handleVerificationOutcome()`
  
-
+ ```sh
+...
+import MetricSDK
+...
+class ViewController: UIViewController {
+    ...
+    override func viewDidLoad(){
+        super.viewDidLoad()
+        ...
+        MetricNotificationManager.shared.addObserver(observer: self,
+                                                     selector: #selector(handleVerificationOutcome),
+                                                     name: NotificationKeys.VERIFICATION_COMPLETE)
+    }
+    ...
+    
+    @objc func handleVerificationOutcome(_ notification: Notification) {
+    if let outcome = notification.object as? VerificationOutcome {
+        switch outcome {
+        case .success:
+            //update your UI, etc..
+            print("Verification Successful")
+        case .failed(let reason):
+            //update your UI, etc..
+            print("Verification Failed due to: \(reason)")
+        default:
+            break
+            }
+        }
+    }
+}
+```
 
 
 
