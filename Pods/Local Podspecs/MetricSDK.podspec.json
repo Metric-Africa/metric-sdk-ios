@@ -1,6 +1,6 @@
 {
   "name": "MetricSDK",
-  "version": "1.0.0-rc5",
+  "version": "1.0.3",
   "summary": "Metric iOS SDK for Identity Verification",
   "homepage": "https://github.com/Metric-Africa/metric-sdk-ios",
   "authors": {
@@ -14,7 +14,7 @@
     "ios": "15.0"
   },
   "source": {
-    "http": "https://github.com/Metric-Africa/metric-sdk-ios/releases/download/v1.0.0-rc5/MetricSDK.zip"
+    "http": "https://github.com/Metric-Africa/metric-sdk-ios/releases/download/1.0.3/MetricSDK.zip"
   },
   "swift_versions": "5.5",
   "pod_target_xcconfig": {

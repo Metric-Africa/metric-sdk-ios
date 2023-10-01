@@ -9,3 +9,13 @@ target 'MetricSDKExampleApp' do
   # Pods for MetricSDKExampleApp
   pod 'MetricSDK', :podspec => 'https://raw.githubusercontent.com/Metric-Africa/metric-sdk-ios/main/MetricSDK.podspec'
 end
+
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '11.0'
+      config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
+    end
+  end
+end

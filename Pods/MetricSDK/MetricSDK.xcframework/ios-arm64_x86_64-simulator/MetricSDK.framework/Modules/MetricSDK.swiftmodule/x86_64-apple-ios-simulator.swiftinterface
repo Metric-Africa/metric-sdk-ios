@@ -469,7 +469,24 @@ public class DataGroup11 : MetricSDK.DataGroup {
   final public func formatPartial(_ rawNumber: Swift.String) -> Swift.String
   @objc deinit
 }
-@objc @_Concurrency.MainActor(unsafe) public class LaunchSDK : UIKit.UIViewController {
+public enum VerificationOutcome {
+  case failed(reason: MetricSDK.Reason)
+  case success
+}
+public enum Reason {
+  case livenessFailed
+  case cancelled
+  case invalidToken
+  case verificationFailed
+  case unauthorized
+  case unknown
+  public static func == (a: MetricSDK.Reason, b: MetricSDK.Reason) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@objc @_Concurrency.MainActor(unsafe) public class LaunchMetricSDK : UIKit.UIViewController {
   @_Concurrency.MainActor(unsafe) public init(token: Swift.String)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
@@ -814,11 +831,12 @@ public class ActiveAuthenticationInfo : MetricSDK.SecurityInfo {
 }
 public struct NotificationKeys {
   public static let AUTHENTICATION_FAILURE: Swift.String
+  public static let VERIFICATION_COMPLETE: Swift.String
 }
-@_hasMissingDesignatedInitializers public class NotificationManager {
-  public static let shared: MetricSDK.NotificationManager
-  public func postNotification(withName name: Swift.String, userInfo: [Swift.AnyHashable : Any]? = nil)
-  public func addObserver(observer: Any, selector: ObjectiveC.Selector, name: Swift.String)
+@_hasMissingDesignatedInitializers public class MetricNotificationManager {
+  public static let shared: MetricSDK.MetricNotificationManager
+  public func postNotification(withName name: Swift.String, object: Any? = nil, userInfo: [Swift.AnyHashable : Any]? = nil)
+  public func addObserver(observer: Any, selector: ObjectiveC.Selector, name: Swift.String, object: Any? = nil)
   public func removeObserver(observer: Any, name: Swift.String)
   @objc deinit
 }
@@ -1353,6 +1371,8 @@ extension MetricSDK.PhoneNumberType : Swift.RawRepresentable {}
 extension MetricSDK.PossibleLengthType : Swift.Equatable {}
 extension MetricSDK.PossibleLengthType : Swift.Hashable {}
 extension MetricSDK.PossibleLengthType : Swift.RawRepresentable {}
+extension MetricSDK.Reason : Swift.Equatable {}
+extension MetricSDK.Reason : Swift.Hashable {}
 extension MetricSDK.SecureMessagingSupportedAlgorithms : Swift.Equatable {}
 extension MetricSDK.SecureMessagingSupportedAlgorithms : Swift.Hashable {}
 extension MetricSDK.LogLevel : Swift.Equatable {}

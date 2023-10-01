@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23127A8EBFFDA1BBB542DD6B /* Pods_MetricSDKExampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B980374C34C3412EB42B634B /* Pods_MetricSDKExampleApp.framework */; };
 		2CA95ABF2AA40F46009A7FB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA95ABE2AA40F46009A7FB6 /* AppDelegate.swift */; };
 		2CA95AC12AA40F46009A7FB6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA95AC02AA40F46009A7FB6 /* SceneDelegate.swift */; };
 		2CA95AC32AA40F46009A7FB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA95AC22AA40F46009A7FB6 /* ViewController.swift */; };
 		2CA95AC62AA40F46009A7FB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CA95AC42AA40F46009A7FB6 /* Main.storyboard */; };
 		2CA95AC82AA40F48009A7FB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CA95AC72AA40F48009A7FB6 /* Assets.xcassets */; };
 		2CA95ACB2AA40F49009A7FB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CA95AC92AA40F49009A7FB6 /* LaunchScreen.storyboard */; };
-		D6ACA5B626479E5BCCD01DFA /* Pods_MetricSDKExampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A051571896EFCEA27AA14BA6 /* Pods_MetricSDKExampleApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2117ACA8D1374979076D2734 /* Pods-MetricSDKExampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetricSDKExampleApp.debug.xcconfig"; path = "Target Support Files/Pods-MetricSDKExampleApp/Pods-MetricSDKExampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		2284D54EABCC7FF6C35E7593 /* Pods-MetricSDKExampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetricSDKExampleApp.release.xcconfig"; path = "Target Support Files/Pods-MetricSDKExampleApp/Pods-MetricSDKExampleApp.release.xcconfig"; sourceTree = "<group>"; };
 		2C0ECC6F2AA5EDBC002239DA /* iProov.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = iProov.xcframework; path = Pods/iProov/iProov.xcframework; sourceTree = "<group>"; };
 		2CA95ABB2AA40F46009A7FB6 /* MetricSDKExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetricSDKExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CA95ABE2AA40F46009A7FB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -26,9 +28,7 @@
 		2CA95AC72AA40F48009A7FB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CA95ACA2AA40F49009A7FB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CA95ACC2AA40F49009A7FB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A051571896EFCEA27AA14BA6 /* Pods_MetricSDKExampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MetricSDKExampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AAA45965CC494B15D8B50763 /* Pods-MetricSDKExampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetricSDKExampleApp.release.xcconfig"; path = "Target Support Files/Pods-MetricSDKExampleApp/Pods-MetricSDKExampleApp.release.xcconfig"; sourceTree = "<group>"; };
-		C0930DAEE07D84DC525EA36B /* Pods-MetricSDKExampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetricSDKExampleApp.debug.xcconfig"; path = "Target Support Files/Pods-MetricSDKExampleApp/Pods-MetricSDKExampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		B980374C34C3412EB42B634B /* Pods_MetricSDKExampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MetricSDKExampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,7 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6ACA5B626479E5BCCD01DFA /* Pods_MetricSDKExampleApp.framework in Frameworks */,
+				23127A8EBFFDA1BBB542DD6B /* Pods_MetricSDKExampleApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,7 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				2C0ECC6F2AA5EDBC002239DA /* iProov.xcframework */,
-				A051571896EFCEA27AA14BA6 /* Pods_MetricSDKExampleApp.framework */,
+				B980374C34C3412EB42B634B /* Pods_MetricSDKExampleApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -87,8 +87,8 @@
 		AA79130EA756BB8A5E15B4BF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C0930DAEE07D84DC525EA36B /* Pods-MetricSDKExampleApp.debug.xcconfig */,
-				AAA45965CC494B15D8B50763 /* Pods-MetricSDKExampleApp.release.xcconfig */,
+				2117ACA8D1374979076D2734 /* Pods-MetricSDKExampleApp.debug.xcconfig */,
+				2284D54EABCC7FF6C35E7593 /* Pods-MetricSDKExampleApp.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -100,11 +100,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2CA95ACF2AA40F49009A7FB6 /* Build configuration list for PBXNativeTarget "MetricSDKExampleApp" */;
 			buildPhases = (
-				8B344F34D902385A8A44800F /* [CP] Check Pods Manifest.lock */,
+				F1D5498DB03D6D3B78DF5EF0 /* [CP] Check Pods Manifest.lock */,
 				2CA95AB72AA40F46009A7FB6 /* Sources */,
 				2CA95AB82AA40F46009A7FB6 /* Frameworks */,
 				2CA95AB92AA40F46009A7FB6 /* Resources */,
-				55FA8F93C32CC68A9D37E160 /* [CP] Embed Pods Frameworks */,
+				AAED172216F63031BFA4DB6B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -162,7 +162,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		55FA8F93C32CC68A9D37E160 /* [CP] Embed Pods Frameworks */ = {
+		AAED172216F63031BFA4DB6B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -179,7 +179,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MetricSDKExampleApp/Pods-MetricSDKExampleApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8B344F34D902385A8A44800F /* [CP] Check Pods Manifest.lock */ = {
+		F1D5498DB03D6D3B78DF5EF0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -352,7 +352,7 @@
 		};
 		2CA95AD02AA40F49009A7FB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0930DAEE07D84DC525EA36B /* Pods-MetricSDKExampleApp.debug.xcconfig */;
+			baseConfigurationReference = 2117ACA8D1374979076D2734 /* Pods-MetricSDKExampleApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -381,7 +381,7 @@
 		};
 		2CA95AD12AA40F49009A7FB6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AAA45965CC494B15D8B50763 /* Pods-MetricSDKExampleApp.release.xcconfig */;
+			baseConfigurationReference = 2284D54EABCC7FF6C35E7593 /* Pods-MetricSDKExampleApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

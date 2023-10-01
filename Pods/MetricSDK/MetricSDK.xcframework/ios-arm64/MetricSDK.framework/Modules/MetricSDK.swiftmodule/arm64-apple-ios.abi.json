@@ -7693,7 +7693,8 @@
         "mangledName": "$s9MetricSDK11EnvironmentO",
         "moduleName": "MetricSDK",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -7740,7 +7741,8 @@
             "moduleName": "MetricSDK",
             "static": true,
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           }
@@ -7750,7 +7752,8 @@
         "mangledName": "$s9MetricSDK0A7ServiceV",
         "moduleName": "MetricSDK",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ]
       },
       {
@@ -7877,7 +7880,8 @@
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "hasStorage": true,
             "accessors": [
@@ -7963,7 +7967,8 @@
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "hasStorage": true,
             "accessors": [
@@ -8049,7 +8054,8 @@
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "hasStorage": true,
             "accessors": [
@@ -8135,7 +8141,8 @@
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "hasStorage": true,
             "accessors": [
@@ -8223,7 +8230,8 @@
               "HasInitialValue",
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -8280,7 +8288,8 @@
         "mangledName": "$s9MetricSDK0A16SDKConfigurationC",
         "moduleName": "MetricSDK",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ]
       },
       {
@@ -11375,6 +11384,472 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "VerificationOutcome",
+        "printedName": "VerificationOutcome",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "failed",
+            "printedName": "failed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MetricSDK.VerificationOutcome.Type) -> (MetricSDK.Reason) -> MetricSDK.VerificationOutcome",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(MetricSDK.Reason) -> MetricSDK.VerificationOutcome",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VerificationOutcome",
+                        "printedName": "MetricSDK.VerificationOutcome",
+                        "usr": "s:9MetricSDK19VerificationOutcomeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(reason: MetricSDK.Reason)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Reason",
+                            "printedName": "MetricSDK.Reason",
+                            "usr": "s:9MetricSDK6ReasonO"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MetricSDK.VerificationOutcome.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VerificationOutcome",
+                        "printedName": "MetricSDK.VerificationOutcome",
+                        "usr": "s:9MetricSDK19VerificationOutcomeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9MetricSDK19VerificationOutcomeO6failedyAcA6ReasonO_tcACmF",
+            "mangledName": "$s9MetricSDK19VerificationOutcomeO6failedyAcA6ReasonO_tcACmF",
+            "moduleName": "MetricSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "success",
+            "printedName": "success",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MetricSDK.VerificationOutcome.Type) -> MetricSDK.VerificationOutcome",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VerificationOutcome",
+                    "printedName": "MetricSDK.VerificationOutcome",
+                    "usr": "s:9MetricSDK19VerificationOutcomeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MetricSDK.VerificationOutcome.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VerificationOutcome",
+                        "printedName": "MetricSDK.VerificationOutcome",
+                        "usr": "s:9MetricSDK19VerificationOutcomeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9MetricSDK19VerificationOutcomeO7successyA2CmF",
+            "mangledName": "$s9MetricSDK19VerificationOutcomeO7successyA2CmF",
+            "moduleName": "MetricSDK"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:9MetricSDK19VerificationOutcomeO",
+        "mangledName": "$s9MetricSDK19VerificationOutcomeO",
+        "moduleName": "MetricSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Reason",
+        "printedName": "Reason",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "livenessFailed",
+            "printedName": "livenessFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MetricSDK.Reason.Type) -> MetricSDK.Reason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Reason",
+                    "printedName": "MetricSDK.Reason",
+                    "usr": "s:9MetricSDK6ReasonO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MetricSDK.Reason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Reason",
+                        "printedName": "MetricSDK.Reason",
+                        "usr": "s:9MetricSDK6ReasonO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9MetricSDK6ReasonO14livenessFailedyA2CmF",
+            "mangledName": "$s9MetricSDK6ReasonO14livenessFailedyA2CmF",
+            "moduleName": "MetricSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "cancelled",
+            "printedName": "cancelled",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MetricSDK.Reason.Type) -> MetricSDK.Reason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Reason",
+                    "printedName": "MetricSDK.Reason",
+                    "usr": "s:9MetricSDK6ReasonO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MetricSDK.Reason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Reason",
+                        "printedName": "MetricSDK.Reason",
+                        "usr": "s:9MetricSDK6ReasonO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9MetricSDK6ReasonO9cancelledyA2CmF",
+            "mangledName": "$s9MetricSDK6ReasonO9cancelledyA2CmF",
+            "moduleName": "MetricSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "invalidToken",
+            "printedName": "invalidToken",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MetricSDK.Reason.Type) -> MetricSDK.Reason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Reason",
+                    "printedName": "MetricSDK.Reason",
+                    "usr": "s:9MetricSDK6ReasonO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MetricSDK.Reason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Reason",
+                        "printedName": "MetricSDK.Reason",
+                        "usr": "s:9MetricSDK6ReasonO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9MetricSDK6ReasonO12invalidTokenyA2CmF",
+            "mangledName": "$s9MetricSDK6ReasonO12invalidTokenyA2CmF",
+            "moduleName": "MetricSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "verificationFailed",
+            "printedName": "verificationFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MetricSDK.Reason.Type) -> MetricSDK.Reason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Reason",
+                    "printedName": "MetricSDK.Reason",
+                    "usr": "s:9MetricSDK6ReasonO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MetricSDK.Reason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Reason",
+                        "printedName": "MetricSDK.Reason",
+                        "usr": "s:9MetricSDK6ReasonO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9MetricSDK6ReasonO18verificationFailedyA2CmF",
+            "mangledName": "$s9MetricSDK6ReasonO18verificationFailedyA2CmF",
+            "moduleName": "MetricSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "unauthorized",
+            "printedName": "unauthorized",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MetricSDK.Reason.Type) -> MetricSDK.Reason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Reason",
+                    "printedName": "MetricSDK.Reason",
+                    "usr": "s:9MetricSDK6ReasonO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MetricSDK.Reason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Reason",
+                        "printedName": "MetricSDK.Reason",
+                        "usr": "s:9MetricSDK6ReasonO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9MetricSDK6ReasonO12unauthorizedyA2CmF",
+            "mangledName": "$s9MetricSDK6ReasonO12unauthorizedyA2CmF",
+            "moduleName": "MetricSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "unknown",
+            "printedName": "unknown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MetricSDK.Reason.Type) -> MetricSDK.Reason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Reason",
+                    "printedName": "MetricSDK.Reason",
+                    "usr": "s:9MetricSDK6ReasonO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MetricSDK.Reason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Reason",
+                        "printedName": "MetricSDK.Reason",
+                        "usr": "s:9MetricSDK6ReasonO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9MetricSDK6ReasonO7unknownyA2CmF",
+            "mangledName": "$s9MetricSDK6ReasonO7unknownyA2CmF",
+            "moduleName": "MetricSDK"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Reason",
+                "printedName": "MetricSDK.Reason",
+                "usr": "s:9MetricSDK6ReasonO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Reason",
+                "printedName": "MetricSDK.Reason",
+                "usr": "s:9MetricSDK6ReasonO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MetricSDK6ReasonO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s9MetricSDK6ReasonO2eeoiySbAC_ACtFZ",
+            "moduleName": "MetricSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MetricSDK6ReasonO9hashValueSivp",
+            "mangledName": "$s9MetricSDK6ReasonO9hashValueSivp",
+            "moduleName": "MetricSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MetricSDK6ReasonO9hashValueSivg",
+                "mangledName": "$s9MetricSDK6ReasonO9hashValueSivg",
+                "moduleName": "MetricSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MetricSDK6ReasonO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s9MetricSDK6ReasonO4hash4intoys6HasherVz_tF",
+            "moduleName": "MetricSDK",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:9MetricSDK6ReasonO",
+        "mangledName": "$s9MetricSDK6ReasonO",
+        "moduleName": "MetricSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MetricSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
@@ -11383,8 +11858,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "LaunchSDK",
-        "printedName": "LaunchSDK",
+        "name": "LaunchMetricSDK",
+        "printedName": "LaunchMetricSDK",
         "children": [
           {
             "kind": "Constructor",
@@ -11393,9 +11868,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "LaunchSDK",
-                "printedName": "MetricSDK.LaunchSDK",
-                "usr": "c:@M@MetricSDK@objc(cs)LaunchSDK"
+                "name": "LaunchMetricSDK",
+                "printedName": "MetricSDK.LaunchMetricSDK",
+                "usr": "c:@M@MetricSDK@objc(cs)LaunchMetricSDK"
               },
               {
                 "kind": "TypeNominal",
@@ -11405,8 +11880,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:9MetricSDK06LaunchB0C5tokenACSS_tcfc",
-            "mangledName": "$s9MetricSDK06LaunchB0C5tokenACSS_tcfc",
+            "usr": "s:9MetricSDK06LaunchaB0C5tokenACSS_tcfc",
+            "mangledName": "$s9MetricSDK06LaunchaB0C5tokenACSS_tcfc",
             "moduleName": "MetricSDK",
             "declAttributes": [
               "Custom",
@@ -11422,13 +11897,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "MetricSDK.LaunchSDK?",
+                "printedName": "MetricSDK.LaunchMetricSDK?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "LaunchSDK",
-                    "printedName": "MetricSDK.LaunchSDK",
-                    "usr": "c:@M@MetricSDK@objc(cs)LaunchSDK"
+                    "name": "LaunchMetricSDK",
+                    "printedName": "MetricSDK.LaunchMetricSDK",
+                    "usr": "c:@M@MetricSDK@objc(cs)LaunchMetricSDK"
                   }
                 ],
                 "usr": "s:Sq"
@@ -11441,8 +11916,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@MetricSDK@objc(cs)LaunchSDK(im)initWithCoder:",
-            "mangledName": "$s9MetricSDK06LaunchB0C5coderACSgSo7NSCoderC_tcfc",
+            "usr": "c:@M@MetricSDK@objc(cs)LaunchMetricSDK(im)initWithCoder:",
+            "mangledName": "$s9MetricSDK06LaunchaB0C5coderACSgSo7NSCoderC_tcfc",
             "moduleName": "MetricSDK",
             "overriding": true,
             "objc_name": "initWithCoder:",
@@ -11467,8 +11942,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@MetricSDK@objc(cs)LaunchSDK(im)viewDidLoad",
-            "mangledName": "$s9MetricSDK06LaunchB0C11viewDidLoadyyF",
+            "usr": "c:@M@MetricSDK@objc(cs)LaunchMetricSDK(im)viewDidLoad",
+            "mangledName": "$s9MetricSDK06LaunchaB0C11viewDidLoadyyF",
             "moduleName": "MetricSDK",
             "overriding": true,
             "objc_name": "viewDidLoad",
@@ -11499,8 +11974,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@MetricSDK@objc(cs)LaunchSDK(im)viewWillAppear:",
-            "mangledName": "$s9MetricSDK06LaunchB0C14viewWillAppearyySbF",
+            "usr": "c:@M@MetricSDK@objc(cs)LaunchMetricSDK(im)viewWillAppear:",
+            "mangledName": "$s9MetricSDK06LaunchaB0C14viewWillAppearyySbF",
             "moduleName": "MetricSDK",
             "overriding": true,
             "objc_name": "viewWillAppear:",
@@ -11520,9 +11995,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "LaunchSDK",
-                "printedName": "MetricSDK.LaunchSDK",
-                "usr": "c:@M@MetricSDK@objc(cs)LaunchSDK"
+                "name": "LaunchMetricSDK",
+                "printedName": "MetricSDK.LaunchMetricSDK",
+                "usr": "c:@M@MetricSDK@objc(cs)LaunchMetricSDK"
               },
               {
                 "kind": "TypeNominal",
@@ -11554,8 +12029,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@MetricSDK@objc(cs)LaunchSDK(im)initWithNibName:bundle:",
-            "mangledName": "$s9MetricSDK06LaunchB0C7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
+            "usr": "c:@M@MetricSDK@objc(cs)LaunchMetricSDK(im)initWithNibName:bundle:",
+            "mangledName": "$s9MetricSDK06LaunchaB0C7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
             "moduleName": "MetricSDK",
             "overriding": true,
             "implicit": true,
@@ -11570,8 +12045,8 @@
           }
         ],
         "declKind": "Class",
-        "usr": "c:@M@MetricSDK@objc(cs)LaunchSDK",
-        "mangledName": "$s9MetricSDK06LaunchB0C",
+        "usr": "c:@M@MetricSDK@objc(cs)LaunchMetricSDK",
+        "mangledName": "$s9MetricSDK06LaunchaB0C",
         "moduleName": "MetricSDK",
         "declAttributes": [
           "Custom",
@@ -11688,7 +12163,8 @@
             "static": true,
             "declAttributes": [
               "Final",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           }
@@ -20829,6 +21305,53 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "VERIFICATION_COMPLETE",
+            "printedName": "VERIFICATION_COMPLETE",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MetricSDK16NotificationKeysV21VERIFICATION_COMPLETESSvpZ",
+            "mangledName": "$s9MetricSDK16NotificationKeysV21VERIFICATION_COMPLETESSvpZ",
+            "moduleName": "MetricSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MetricSDK16NotificationKeysV21VERIFICATION_COMPLETESSvgZ",
+                "mangledName": "$s9MetricSDK16NotificationKeysV21VERIFICATION_COMPLETESSvgZ",
+                "moduleName": "MetricSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Struct",
@@ -20841,8 +21364,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "NotificationManager",
-        "printedName": "NotificationManager",
+        "name": "MetricNotificationManager",
+        "printedName": "MetricNotificationManager",
         "children": [
           {
             "kind": "Var",
@@ -20851,14 +21374,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "NotificationManager",
-                "printedName": "MetricSDK.NotificationManager",
-                "usr": "s:9MetricSDK19NotificationManagerC"
+                "name": "MetricNotificationManager",
+                "printedName": "MetricSDK.MetricNotificationManager",
+                "usr": "s:9MetricSDK0A19NotificationManagerC"
               }
             ],
             "declKind": "Var",
-            "usr": "s:9MetricSDK19NotificationManagerC6sharedACvpZ",
-            "mangledName": "$s9MetricSDK19NotificationManagerC6sharedACvpZ",
+            "usr": "s:9MetricSDK0A19NotificationManagerC6sharedACvpZ",
+            "mangledName": "$s9MetricSDK0A19NotificationManagerC6sharedACvpZ",
             "moduleName": "MetricSDK",
             "static": true,
             "declAttributes": [
@@ -20877,14 +21400,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "NotificationManager",
-                    "printedName": "MetricSDK.NotificationManager",
-                    "usr": "s:9MetricSDK19NotificationManagerC"
+                    "name": "MetricNotificationManager",
+                    "printedName": "MetricSDK.MetricNotificationManager",
+                    "usr": "s:9MetricSDK0A19NotificationManagerC"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9MetricSDK19NotificationManagerC6sharedACvgZ",
-                "mangledName": "$s9MetricSDK19NotificationManagerC6sharedACvgZ",
+                "usr": "s:9MetricSDK0A19NotificationManagerC6sharedACvgZ",
+                "mangledName": "$s9MetricSDK0A19NotificationManagerC6sharedACvgZ",
                 "moduleName": "MetricSDK",
                 "static": true,
                 "implicit": true,
@@ -20898,7 +21421,7 @@
           {
             "kind": "Function",
             "name": "postNotification",
-            "printedName": "postNotification(withName:userInfo:)",
+            "printedName": "postNotification(withName:object:userInfo:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -20910,6 +21433,20 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -20941,8 +21478,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:9MetricSDK19NotificationManagerC04postC08withName8userInfoySS_SDys11AnyHashableVypGSgtF",
-            "mangledName": "$s9MetricSDK19NotificationManagerC04postC08withName8userInfoySS_SDys11AnyHashableVypGSgtF",
+            "usr": "s:9MetricSDK0A19NotificationManagerC04postC08withName6object8userInfoySS_ypSgSDys11AnyHashableVypGSgtF",
+            "mangledName": "$s9MetricSDK0A19NotificationManagerC04postC08withName6object8userInfoySS_ypSgSDys11AnyHashableVypGSgtF",
             "moduleName": "MetricSDK",
             "declAttributes": [
               "AccessControl"
@@ -20952,7 +21489,7 @@
           {
             "kind": "Function",
             "name": "addObserver",
-            "printedName": "addObserver(observer:selector:name:)",
+            "printedName": "addObserver(observer:selector:name:object:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -20975,11 +21512,25 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:9MetricSDK19NotificationManagerC11addObserver8observer8selector4nameyyp_10ObjectiveC8SelectorVSStF",
-            "mangledName": "$s9MetricSDK19NotificationManagerC11addObserver8observer8selector4nameyyp_10ObjectiveC8SelectorVSStF",
+            "usr": "s:9MetricSDK0A19NotificationManagerC11addObserver8observer8selector4name6objectyyp_10ObjectiveC8SelectorVSSypSgtF",
+            "mangledName": "$s9MetricSDK0A19NotificationManagerC11addObserver8observer8selector4name6objectyyp_10ObjectiveC8SelectorVSSypSgtF",
             "moduleName": "MetricSDK",
             "declAttributes": [
               "AccessControl"
@@ -21009,8 +21560,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:9MetricSDK19NotificationManagerC14removeObserver8observer4nameyyp_SStF",
-            "mangledName": "$s9MetricSDK19NotificationManagerC14removeObserver8observer4nameyyp_SStF",
+            "usr": "s:9MetricSDK0A19NotificationManagerC14removeObserver8observer4nameyyp_SStF",
+            "mangledName": "$s9MetricSDK0A19NotificationManagerC14removeObserver8observer4nameyyp_SStF",
             "moduleName": "MetricSDK",
             "declAttributes": [
               "AccessControl"
@@ -21019,8 +21570,8 @@
           }
         ],
         "declKind": "Class",
-        "usr": "s:9MetricSDK19NotificationManagerC",
-        "mangledName": "$s9MetricSDK19NotificationManagerC",
+        "usr": "s:9MetricSDK0A19NotificationManagerC",
+        "mangledName": "$s9MetricSDK0A19NotificationManagerC",
         "moduleName": "MetricSDK",
         "declAttributes": [
           "AccessControl"
@@ -38469,92 +39020,78 @@
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/PhoneNumberKit\/PhoneNumberKit.swift",
-      "kind": "StringLiteral",
-      "offset": 8407,
-      "length": 75,
-      "value": "\"[PhoneNumberKit] Failed to parse example number for \""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/PhoneNumberKit\/PhoneNumberKit.swift",
-      "kind": "StringLiteral",
-      "offset": 8474,
-      "length": 6,
-      "value": "\" region\""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/PhoneNumberKit\/PhoneNumberKit.swift",
       "kind": "BooleanLiteral",
-      "offset": 9188,
+      "offset": 9190,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/PhoneNumberKit\/PhoneNumberKit.swift",
       "kind": "Array",
-      "offset": 10760,
+      "offset": 10762,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/PhoneNumberKit\/PhoneNumberKit.swift",
       "kind": "Array",
-      "offset": 11017,
+      "offset": 11019,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/PhoneNumberKit\/PhoneNumberKit.swift",
       "kind": "Array",
-      "offset": 11127,
+      "offset": 11129,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/PhoneNumberKit\/PhoneNumberKit.swift",
       "kind": "StringLiteral",
-      "offset": 12496,
+      "offset": 12498,
       "length": 3,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/PhoneNumberKit\/PhoneNumberKit.swift",
       "kind": "StringLiteral",
-      "offset": 13018,
+      "offset": 13020,
       "length": 4,
       "value": "\"[]\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/PhoneNumberKit\/PhoneNumberKit.swift",
       "kind": "StringLiteral",
-      "offset": 13096,
+      "offset": 13098,
       "length": 3,
       "value": "\"-\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/PhoneNumberKit\/PhoneNumberKit.swift",
       "kind": "IntegerLiteral",
-      "offset": 13164,
+      "offset": 13166,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/PhoneNumberKit\/PhoneNumberKit.swift",
       "kind": "Array",
-      "offset": 13297,
+      "offset": 13299,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/PhoneNumberKit\/PhoneNumberKit.swift",
       "kind": "StringLiteral",
-      "offset": 14901,
+      "offset": 14903,
       "length": 21,
       "value": "\"PhoneNumberMetadata\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/PhoneNumberKit\/PhoneNumberKit.swift",
       "kind": "StringLiteral",
-      "offset": 14932,
+      "offset": 14934,
       "length": 6,
       "value": "\"json\""
     },
@@ -38568,14 +39105,14 @@
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/PhoneNumberKit\/PhoneNumberKit.swift",
       "kind": "Array",
-      "offset": 15476,
+      "offset": 15478,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/PhoneNumberKit\/PhoneNumberKit.swift",
       "kind": "BooleanLiteral",
-      "offset": 15617,
+      "offset": 15619,
       "length": 5,
       "value": "false"
     },
@@ -40983,266 +41520,245 @@
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/VoterVerifySuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 20146,
-      "length": 22,
-      "value": "\"Image: \""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/VoterVerifySuccessViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 20167,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/VoterVerifySuccessViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 20219,
-      "length": 20,
-      "value": "\"Couldn't get image\""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/VoterVerifySuccessViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 20336,
+      "offset": 20340,
       "length": 50,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/VoterVerifySuccessViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 20383,
+      "offset": 20387,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/VoterVerifySuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 20385,
+      "offset": 20389,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/VoterVerifySuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 20522,
+      "offset": 20526,
       "length": 51,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/VoterVerifySuccessViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 20569,
+      "offset": 20573,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/VoterVerifySuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 20571,
+      "offset": 20575,
       "length": 1,
       "value": "\"%\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/VoterVerifySuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21211,
+      "offset": 21215,
       "length": 12,
       "value": "\"SUCCESSFUL\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/VoterVerifySuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21296,
+      "offset": 21300,
       "length": 9,
       "value": "\"Success\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/VoterVerifySuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21378,
+      "offset": 21382,
       "length": 9,
       "value": "\"SUCCESS\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/VoterVerifySuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21391,
+      "offset": 21395,
       "length": 6,
       "value": "\"True\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/VoterVerifySuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21400,
+      "offset": 21404,
       "length": 7,
       "value": "\"False\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/VoterVerifySuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21474,
+      "offset": 21478,
       "length": 12,
       "value": "\"SUCCESSFUL\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/VoterVerifySuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21556,
+      "offset": 21560,
       "length": 9,
       "value": "\"Success\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/VoterVerifySuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21635,
+      "offset": 21639,
       "length": 9,
       "value": "\"SUCCESS\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/VoterVerifySuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21675,
+      "offset": 21679,
       "length": 13,
       "value": "\"verify-true\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/VoterVerifySuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21719,
+      "offset": 21723,
       "length": 11,
       "value": "\"failed-ic\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/VoterVerifySuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21968,
+      "offset": 21972,
       "length": 5,
       "value": "\"N\/A\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/VoterVerifySuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 22044,
+      "offset": 22048,
       "length": 6,
       "value": "\"%.2f\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/VoterVerifySuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 22104,
+      "offset": 22108,
       "length": 4,
       "value": "\"90\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/VoterVerifySuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 22133,
+      "offset": 22137,
       "length": 9,
       "value": "\"Perfect\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/VoterVerifySuccessViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 22190,
+      "offset": 22194,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/VoterVerifySuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 22209,
+      "offset": 22213,
       "length": 4,
       "value": "\"61\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/VoterVerifySuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 22216,
+      "offset": 22220,
       "length": 4,
       "value": "\"89\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/VoterVerifySuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 22242,
+      "offset": 22246,
       "length": 6,
       "value": "\"Good\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/VoterVerifySuccessViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 22296,
+      "offset": 22300,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/VoterVerifySuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 22315,
+      "offset": 22319,
       "length": 4,
       "value": "\"40\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/VoterVerifySuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 22322,
+      "offset": 22326,
       "length": 4,
       "value": "\"60\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/VoterVerifySuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 22348,
+      "offset": 22352,
       "length": 6,
       "value": "\"Fair\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/VoterVerifySuccessViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 22404,
+      "offset": 22408,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/VoterVerifySuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 22423,
+      "offset": 22427,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/VoterVerifySuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 22429,
+      "offset": 22433,
       "length": 4,
       "value": "\"39\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/VoterVerifySuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 22455,
+      "offset": 22459,
       "length": 5,
       "value": "\"Bad\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/VoterVerifySuccessViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 22504,
+      "offset": 22508,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/VoterVerifySuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 22547,
+      "offset": 22551,
       "length": 3,
       "value": "\"-\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/VoterVerifySuccessViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 22925,
+      "offset": 22929,
       "length": 4,
       "value": "true"
     },
@@ -50328,30 +50844,30 @@
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/Util\/MetricSDKConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 475,
+      "offset": 1191,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/Util\/MetricSDKConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 513,
+      "offset": 1288,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/Util\/MetricSDKConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 539,
+      "offset": 1388,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/Util\/MetricSDKConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 628,
-      "length": 7,
-      "value": "\"1.0.1\""
+      "offset": 1602,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/View\/BaseUILabel.swift",
@@ -52365,142 +52881,184 @@
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Model\/TokenVerificationResponse.swift",
       "kind": "StringLiteral",
-      "offset": 707,
+      "offset": 795,
       "length": 9,
       "value": "\"id_type\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Model\/TokenVerificationResponse.swift",
       "kind": "StringLiteral",
-      "offset": 744,
+      "offset": 832,
       "length": 13,
       "value": "\"referenceId\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Model\/TokenVerificationResponse.swift",
       "kind": "StringLiteral",
-      "offset": 840,
+      "offset": 928,
       "length": 13,
       "value": "\"phonenumber\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Model\/TokenVerificationResponse.swift",
       "kind": "StringLiteral",
-      "offset": 887,
+      "offset": 975,
       "length": 22,
       "value": "\"send_token_to_client\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Model\/TokenVerificationResponse.swift",
       "kind": "StringLiteral",
-      "offset": 941,
+      "offset": 1029,
       "length": 17,
       "value": "\"ghanacardnumber\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Model\/TokenVerificationResponse.swift",
       "kind": "StringLiteral",
-      "offset": 981,
+      "offset": 1069,
       "length": 9,
       "value": "\"user_id\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Model\/TokenVerificationResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1044,
+      "offset": 1132,
       "length": 17,
       "value": "\"liveliness_type\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Model\/TokenVerificationResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1089,
+      "offset": 1177,
       "length": 13,
       "value": "\"companyname\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Model\/TokenVerificationResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1126,
+      "offset": 1214,
       "length": 10,
       "value": "\"logo_url\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Model\/TokenVerificationResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1165,
+      "offset": 1253,
       "length": 15,
       "value": "\"primary_color\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Model\/TokenVerificationResponse.swift",
       "kind": "StringLiteral",
-      "offset": 707,
+      "offset": 1292,
+      "length": 9,
+      "value": "\"voterid\""
+    },
+    {
+      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Model\/TokenVerificationResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1332,
+      "length": 16,
+      "value": "\"passportnumber\""
+    },
+    {
+      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Model\/TokenVerificationResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1378,
+      "length": 10,
+      "value": "\"driverid\""
+    },
+    {
+      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Model\/TokenVerificationResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 795,
       "length": 9,
       "value": "\"id_type\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Model\/TokenVerificationResponse.swift",
       "kind": "StringLiteral",
-      "offset": 744,
+      "offset": 832,
       "length": 13,
       "value": "\"referenceId\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Model\/TokenVerificationResponse.swift",
       "kind": "StringLiteral",
-      "offset": 840,
+      "offset": 928,
       "length": 13,
       "value": "\"phonenumber\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Model\/TokenVerificationResponse.swift",
       "kind": "StringLiteral",
-      "offset": 887,
+      "offset": 975,
       "length": 22,
       "value": "\"send_token_to_client\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Model\/TokenVerificationResponse.swift",
       "kind": "StringLiteral",
-      "offset": 941,
+      "offset": 1029,
       "length": 17,
       "value": "\"ghanacardnumber\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Model\/TokenVerificationResponse.swift",
       "kind": "StringLiteral",
-      "offset": 981,
+      "offset": 1069,
       "length": 9,
       "value": "\"user_id\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Model\/TokenVerificationResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1044,
+      "offset": 1132,
       "length": 17,
       "value": "\"liveliness_type\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Model\/TokenVerificationResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1089,
+      "offset": 1177,
       "length": 13,
       "value": "\"companyname\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Model\/TokenVerificationResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1126,
+      "offset": 1214,
       "length": 10,
       "value": "\"logo_url\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Model\/TokenVerificationResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1165,
+      "offset": 1253,
       "length": 15,
       "value": "\"primary_color\""
+    },
+    {
+      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Model\/TokenVerificationResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1292,
+      "length": 9,
+      "value": "\"voterid\""
+    },
+    {
+      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Model\/TokenVerificationResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1332,
+      "length": 16,
+      "value": "\"passportnumber\""
+    },
+    {
+      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Model\/TokenVerificationResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1378,
+      "length": 10,
+      "value": "\"driverid\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/NFC\/NFCCore\/OpenSSLUtils.swift",
@@ -54794,56 +55352,56 @@
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Launcher\/LaunchSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 542,
+      "offset": 548,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Launcher\/LaunchSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 609,
+      "offset": 615,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Launcher\/LaunchSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 856,
+      "offset": 862,
       "length": 3,
       "value": "0.8"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Launcher\/LaunchSDK.swift",
       "kind": "StringLiteral",
-      "offset": 1241,
+      "offset": 1247,
       "length": 39,
       "value": "\"init(coder:) has not been implemented\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Launcher\/LaunchSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 1470,
+      "offset": 1476,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Launcher\/LaunchSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1570,
+      "offset": 1576,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Launcher\/LaunchSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 1925,
+      "offset": 1931,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Launcher\/LaunchSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 2428,
+      "offset": 2434,
       "length": 4,
       "value": "true"
     },
@@ -54851,167 +55409,167 @@
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Launcher\/LaunchSDK.swift",
       "kind": "StringLiteral",
       "offset": 132,
-      "length": 9,
-      "value": "\"MetricSDK.LaunchSDK\""
+      "length": 15,
+      "value": "\"MetricSDK.LaunchMetricSDK\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Launcher\/LaunchSDK.swift",
       "kind": "StringLiteral",
-      "offset": 2637,
+      "offset": 2649,
       "length": 4,
       "value": "\"--\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Launcher\/LaunchSDK.swift",
       "kind": "StringLiteral",
-      "offset": 2693,
+      "offset": 2705,
       "length": 3,
       "value": "\"-\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Launcher\/LaunchSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 2979,
+      "offset": 3012,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Launcher\/LaunchSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 3287,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Launcher\/LaunchSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 3355,
+      "offset": 3268,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Launcher\/LaunchSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 3519,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Launcher\/LaunchSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 3540,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Launcher\/LaunchSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 3566,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Launcher\/LaunchSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 3588,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Launcher\/LaunchSDK.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3632,
+      "offset": 3432,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Launcher\/LaunchSDK.swift",
       "kind": "StringLiteral",
-      "offset": 3647,
+      "offset": 3453,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Launcher\/LaunchSDK.swift",
       "kind": "StringLiteral",
-      "offset": 3659,
+      "offset": 3479,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Launcher\/LaunchSDK.swift",
       "kind": "StringLiteral",
-      "offset": 3689,
+      "offset": 3501,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Launcher\/LaunchSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 3753,
+      "offset": 3545,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Launcher\/LaunchSDK.swift",
       "kind": "StringLiteral",
-      "offset": 3762,
+      "offset": 3560,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Launcher\/LaunchSDK.swift",
       "kind": "StringLiteral",
-      "offset": 3779,
+      "offset": 3572,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Launcher\/LaunchSDK.swift",
       "kind": "StringLiteral",
-      "offset": 3792,
+      "offset": 3602,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Launcher\/LaunchSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3666,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Launcher\/LaunchSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 3675,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Launcher\/LaunchSDK.swift",
       "kind": "StringLiteral",
-      "offset": 3802,
+      "offset": 3692,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Launcher\/LaunchSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 3705,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Launcher\/LaunchSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 3715,
       "length": 8,
       "value": "\"online\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Launcher\/LaunchSDK.swift",
       "kind": "StringLiteral",
-      "offset": 3820,
+      "offset": 3733,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Launcher\/LaunchSDK.swift",
       "kind": "StringLiteral",
-      "offset": 4176,
+      "offset": 4190,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Launcher\/LaunchSDK.swift",
       "kind": "StringLiteral",
-      "offset": 4317,
+      "offset": 4870,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Launcher\/LaunchSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 4958,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Launcher\/LaunchSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 4766,
+      "offset": 5428,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Launcher\/LaunchSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 5027,
+      "offset": 5689,
       "length": 4,
       "value": "true"
     },
@@ -55042,34 +55600,6 @@
       "offset": 553,
       "length": 12,
       "value": "\"SECRET_KEY\""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Launcher\/Metric.swift",
-      "kind": "StringLiteral",
-      "offset": 1430,
-      "length": 50,
-      "value": "\"Failed to save secret key to Keychain: \""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Launcher\/Metric.swift",
-      "kind": "StringLiteral",
-      "offset": 1479,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Launcher\/Metric.swift",
-      "kind": "StringLiteral",
-      "offset": 2052,
-      "length": 56,
-      "value": "\"Failed to save client key to Keychain: \""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Launcher\/Metric.swift",
-      "kind": "StringLiteral",
-      "offset": 2107,
-      "length": 2,
-      "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/View\/OvalOverlayView.swift",
@@ -56129,34 +56659,6 @@
       "value": "true"
     },
     {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/PhoneNumberKit\/MetadataManager.swift",
-      "kind": "StringLiteral",
-      "offset": 2550,
-      "length": 88,
-      "value": "\"ERROR: Unable to load PhoneNumberMetadata.json resource: \""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/PhoneNumberKit\/MetadataManager.swift",
-      "kind": "StringLiteral",
-      "offset": 2637,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/ImageManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1065,
-      "length": 32,
-      "value": "\"Error fetching image: \""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/ImageManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1096,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/VerifyWithToken\/ScanQRViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 671,
@@ -56250,63 +56752,49 @@
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/VerifyWithToken\/ScanQRViewController.swift",
       "kind": "StringLiteral",
-      "offset": 4830,
-      "length": 52,
-      "value": "\"TakeASelfie: Cannot construct capture device input\""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/VerifyWithToken\/ScanQRViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 4933,
-      "length": 40,
-      "value": "\"TakeASelfie: Cannot get capture device\""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/VerifyWithToken\/ScanQRViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 5028,
+      "offset": 5120,
       "length": 4,
       "value": "\"Ok\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/VerifyWithToken\/ScanQRViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 5097,
+      "offset": 5189,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/VerifyWithToken\/ScanQRViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5791,
+      "offset": 5925,
       "length": 4,
       "value": "\"Ok\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/VerifyWithToken\/ScanQRViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6631,
+      "offset": 6765,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/VerifyWithToken\/ScanQRViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7241,
+      "offset": 7375,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/VerifyWithToken\/ScanQRViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7668,
+      "offset": 7802,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/VerifyWithToken\/ScanQRViewController.swift",
       "kind": "StringLiteral",
-      "offset": 7849,
+      "offset": 7983,
       "length": 7,
       "value": "\"token\""
     },
@@ -58896,63 +59384,56 @@
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/DisplayCaptureImageViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6991,
+      "offset": 7016,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/DisplayCaptureImageViewController.swift",
       "kind": "StringLiteral",
-      "offset": 7242,
+      "offset": 7267,
       "length": 22,
       "value": "\"Image upload failed.\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/DisplayCaptureImageViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7607,
+      "offset": 7632,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/DisplayCaptureImageViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7959,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/DisplayCaptureImageViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 8186,
-      "length": 36,
-      "value": "\"Verification initialization failed\""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/DisplayCaptureImageViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 8517,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/DisplayCaptureImageViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 8778,
+      "offset": 7984,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/DisplayCaptureImageViewController.swift",
       "kind": "StringLiteral",
-      "offset": 8997,
+      "offset": 8211,
       "length": 36,
       "value": "\"Verification initialization failed\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/DisplayCaptureImageViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 9312,
+      "offset": 8542,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/DisplayCaptureImageViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8811,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/DisplayCaptureImageViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9335,
       "length": 5,
       "value": "false"
     },
@@ -58965,141 +59446,141 @@
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/DisplayCaptureImageViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 9563,
-      "length": 29,
-      "value": "\"Polling Count: \""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/DisplayCaptureImageViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 9591,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/DisplayCaptureImageViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9634,
+      "offset": 9612,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/DisplayCaptureImageViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9636,
+      "offset": 9614,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/DisplayCaptureImageViewController.swift",
       "kind": "StringLiteral",
-      "offset": 9682,
+      "offset": 9660,
       "length": 20,
       "value": "\"Liveness detection\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/DisplayCaptureImageViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9716,
+      "offset": 9694,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/DisplayCaptureImageViewController.swift",
       "kind": "StringLiteral",
-      "offset": 9762,
+      "offset": 9740,
       "length": 17,
       "value": "\"Face comparison\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/DisplayCaptureImageViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9793,
+      "offset": 9771,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/DisplayCaptureImageViewController.swift",
       "kind": "StringLiteral",
-      "offset": 9839,
+      "offset": 9817,
       "length": 16,
       "value": "\"Retrieving KYC\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/DisplayCaptureImageViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9869,
+      "offset": 9847,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/DisplayCaptureImageViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9872,
+      "offset": 9850,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/DisplayCaptureImageViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9875,
+      "offset": 9853,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/DisplayCaptureImageViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9878,
+      "offset": 9856,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/DisplayCaptureImageViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9882,
+      "offset": 9860,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/DisplayCaptureImageViewController.swift",
       "kind": "StringLiteral",
-      "offset": 9928,
+      "offset": 9906,
       "length": 16,
       "value": "\"Retrieving KYC\""
+    },
+    {
+      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/DisplayCaptureImageViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9936,
+      "length": 1,
+      "value": "9"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/DisplayCaptureImageViewController.swift",
       "kind": "StringLiteral",
-      "offset": 10005,
+      "offset": 9974,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/DisplayCaptureImageViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 10038,
       "length": 16,
       "value": "\"Retrieving KYC\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/DisplayCaptureImageViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10140,
+      "offset": 10454,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/DisplayCaptureImageViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10577,
+      "offset": 10891,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/DisplayCaptureImageViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10687,
+      "offset": 11001,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/DisplayCaptureImageViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 12699,
+      "offset": 13286,
       "length": 5,
       "value": "false"
     },
@@ -59148,77 +59629,77 @@
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/CustomVerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 2009,
+      "offset": 2073,
       "length": 42,
       "value": "\"5d6b64ec2f98193e08c2ec99ac82e0459a44451f\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/CustomVerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 2076,
+      "offset": 2140,
       "length": 42,
       "value": "\"a6103fbee50ccf5b9627d4557fac7ad6f6eca5d6\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/CustomVerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 2169,
+      "offset": 2233,
       "length": 9,
       "value": "\"api_key\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/CustomVerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 2200,
+      "offset": 2264,
       "length": 8,
       "value": "\"secret\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/CustomVerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 2233,
+      "offset": 2297,
       "length": 9,
       "value": "\"user_id\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/CustomVerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 2276,
+      "offset": 2340,
       "length": 7,
       "value": "\"token\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/CustomVerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 2315,
+      "offset": 2379,
       "length": 8,
       "value": "\"client\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/CustomVerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 2324,
+      "offset": 2388,
       "length": 22,
       "value": "\"com.inpath.metricsdk\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/CustomVerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 2360,
+      "offset": 2424,
       "length": 10,
       "value": "\"activate\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/CustomVerificationViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 2371,
+      "offset": 2435,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/CustomVerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 2428,
+      "offset": 2492,
       "length": 60,
       "value": "\"https:\/\/eu.rp.secure.iproov.me\/api\/v2\/claim\/enrol\/validate\""
     },
@@ -61316,6 +61797,20 @@
       "value": "\"ios\""
     },
     {
+      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 472,
+      "length": 69,
+      "value": "\"There was a problem processing your request. Please try again later\""
+    },
+    {
+      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 583,
+      "length": 22,
+      "value": "\"Verification failed.\""
+    },
+    {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/NFC\/NFCCore\/PassportModel.swift",
       "kind": "StringLiteral",
       "offset": 207,
@@ -63404,840 +63899,833 @@
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 3635,
+      "offset": 3701,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 4008,
+      "offset": 4074,
       "length": 52,
       "value": "\"Liveness Mode Data Success: \""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 4059,
+      "offset": 4125,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 4288,
+      "offset": 4354,
       "length": 46,
       "value": "\"Failed Getting Livesness Modes: \""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 4333,
+      "offset": 4399,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 4399,
+      "offset": 4465,
       "length": 42,
       "value": "\"Failed Getting Livesness Modes: \""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 4440,
+      "offset": 4506,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 4790,
+      "offset": 4856,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 5212,
+      "offset": 5278,
       "length": 47,
       "value": "\"Liveness Capture Mode Data Success: \""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 5258,
+      "offset": 5324,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 5428,
+      "offset": 5494,
       "length": 46,
       "value": "\"Failed Getting Livesness Modes: \""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 5473,
+      "offset": 5539,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 5539,
+      "offset": 5605,
       "length": 42,
       "value": "\"Failed Getting Livesness Modes: \""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 5580,
+      "offset": 5646,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 5922,
+      "offset": 5988,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 6285,
+      "offset": 6351,
       "length": 8,
       "value": "\"active\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 6323,
+      "offset": 6389,
       "length": 5,
       "value": "\"n\/a\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 6349,
+      "offset": 6415,
       "length": 5,
       "value": "\"n\/a\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 6711,
+      "offset": 6843,
       "length": 7,
       "value": "\"Error\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 7068,
+      "offset": 7200,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 7437,
+      "offset": 7569,
       "length": 8,
       "value": "\"active\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 7468,
+      "offset": 7600,
       "length": 5,
       "value": "\"n\/a\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 7487,
+      "offset": 7619,
       "length": 5,
       "value": "\"n\/a\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 8055,
+      "offset": 8253,
       "length": 7,
       "value": "\"Error\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 8233,
+      "offset": 8431,
       "length": 7,
       "value": "\"token\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 8492,
+      "offset": 8690,
       "length": 4,
       "value": "true"
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
-      "kind": "StringLiteral",
-      "offset": 9421,
-      "length": 7,
-      "value": "\"Error\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 9795,
+      "offset": 10093,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 10193,
+      "offset": 10491,
       "length": 8,
       "value": "\"active\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 10763,
+      "offset": 11125,
       "length": 7,
       "value": "\"Error\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 11315,
+      "offset": 11734,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 11362,
+      "offset": 11781,
       "length": 5,
       "value": "\"key\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 11368,
+      "offset": 11787,
       "length": 18,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 11381,
+      "offset": 11800,
       "length": 1,
       "value": "\".png\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 11400,
+      "offset": 11819,
       "length": 17,
       "value": "\"ghanacardnumber\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 11418,
+      "offset": 11837,
       "length": 35,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 11449,
+      "offset": 11868,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 11452,
+      "offset": 11871,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 11467,
+      "offset": 11886,
       "length": 18,
       "value": "\"verificationtype\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 11510,
+      "offset": 11929,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 11525,
+      "offset": 11944,
       "length": 13,
       "value": "\"referenceid\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 11539,
+      "offset": 11958,
       "length": 52,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 11587,
+      "offset": 12006,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 11590,
+      "offset": 12009,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 11605,
+      "offset": 12024,
       "length": 9,
       "value": "\"purpose\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 11615,
+      "offset": 12034,
       "length": 52,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 11663,
+      "offset": 12082,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 11666,
+      "offset": 12085,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 11681,
+      "offset": 12100,
       "length": 9,
       "value": "\"comment\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 11691,
+      "offset": 12110,
       "length": 39,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 11726,
+      "offset": 12145,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 11729,
+      "offset": 12148,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 11744,
+      "offset": 12163,
       "length": 9,
       "value": "\"channel\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 11796,
+      "offset": 12215,
       "length": 9,
       "value": "\"id_type\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 11806,
+      "offset": 12225,
       "length": 44,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 11846,
+      "offset": 12265,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 11849,
+      "offset": 12268,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 11864,
+      "offset": 12283,
       "length": 13,
       "value": "\"app_version\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 12176,
+      "offset": 12595,
       "length": 17,
       "value": "\"ghanacardnumber\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 12248,
+      "offset": 12667,
       "length": 9,
       "value": "\"voterid\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 12298,
+      "offset": 12717,
       "length": 16,
       "value": "\"passportnumber\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 12503,
+      "offset": 12922,
       "length": 9,
       "value": "\"voterid\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 12553,
+      "offset": 12972,
       "length": 17,
       "value": "\"ghanacardnumber\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 12659,
+      "offset": 13078,
       "length": 16,
       "value": "\"passportnumber\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 12748,
+      "offset": 13167,
       "length": 17,
       "value": "\"ghanacardnumber\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 12859,
+      "offset": 13278,
       "length": 10,
       "value": "\"driverid\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 13082,
+      "offset": 13501,
       "length": 11,
       "value": "\"firstname\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 13165,
+      "offset": 13584,
       "length": 10,
       "value": "\"lastname\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 13243,
+      "offset": 13662,
       "length": 5,
       "value": "\"dob\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 13344,
+      "offset": 13763,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 13355,
+      "offset": 13774,
       "length": 9,
       "value": "\"blended\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 14368,
+      "offset": 14787,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 14629,
-      "length": 10,
-      "value": "\"...Error\""
+      "offset": 15066,
+      "length": 31,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 14685,
-      "length": 9,
-      "value": "\"Failure\""
+      "offset": 15096,
+      "length": 3,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 14768,
+      "offset": 15171,
       "length": 9,
       "value": "\"Success\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 14927,
+      "offset": 15330,
       "length": 29,
       "value": "\"Could not create image data\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 15000,
+      "offset": 15403,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 15449,
+      "offset": 15852,
       "length": 5,
       "value": "\"PUT\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 15661,
+      "offset": 16064,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 15825,
+      "offset": 16228,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 15848,
+      "offset": 16251,
       "length": 18,
       "value": "\"Invalid response\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 15916,
+      "offset": 16319,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 15985,
+      "offset": 16388,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 15991,
+      "offset": 16394,
       "length": 3,
       "value": "299"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 16058,
+      "offset": 16461,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 16115,
+      "offset": 16518,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 16138,
+      "offset": 16541,
       "length": 18,
       "value": "\"Invalid response\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 16492,
+      "offset": 16895,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 16519,
+      "offset": 16922,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 16913,
+      "offset": 17316,
       "length": 11,
       "value": "\"reference\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 17776,
+      "offset": 18179,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 17824,
+      "offset": 18227,
       "length": 3,
       "value": "5.0"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 18617,
+      "offset": 19020,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 19064,
+      "offset": 19467,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 19458,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
-      "kind": "StringLiteral",
-      "offset": 19694,
-      "length": 69,
-      "value": "\"There was an error processing your request. Please try again later.\""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
-      "kind": "IntegerLiteral",
-      "offset": 19934,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 19992,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 20276,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 20527,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 20978,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 21375,
+      "offset": 19861,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 21611,
+      "offset": 20118,
       "length": 69,
       "value": "\"There was an error processing your request. Please try again later.\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 21851,
+      "offset": 20358,
       "length": 1,
-      "value": "8"
+      "value": "7"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 21909,
+      "offset": 20416,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 22193,
+      "offset": 20914,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 22445,
+      "offset": 21165,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 22894,
+      "offset": 21616,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 23283,
+      "offset": 22013,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 23519,
+      "offset": 22270,
       "length": 69,
       "value": "\"There was an error processing your request. Please try again later.\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 23759,
+      "offset": 22510,
       "length": 1,
-      "value": "8"
+      "value": "7"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 23817,
+      "offset": 22568,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 24101,
+      "offset": 23066,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 24673,
+      "offset": 23318,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 25090,
+      "offset": 23767,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 25447,
+      "offset": 24156,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 25671,
+      "offset": 24413,
       "length": 69,
       "value": "\"There was an error processing your request. Please try again later.\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 25895,
+      "offset": 24653,
       "length": 1,
-      "value": "8"
+      "value": "7"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 25949,
+      "offset": 24711,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 26201,
+      "offset": 25209,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 25781,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 26198,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 26555,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 26800,
+      "length": 69,
+      "value": "\"There was an error processing your request. Please try again later.\""
+    },
+    {
+      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 27024,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 27078,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/VerificationViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 27532,
       "length": 4,
       "value": "true"
     },
@@ -64678,28 +65166,28 @@
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Model\/FailedVerificationStatusResponse.swift",
       "kind": "StringLiteral",
-      "offset": 765,
+      "offset": 790,
       "length": 12,
       "value": "\"nationalId\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Model\/FailedVerificationStatusResponse.swift",
       "kind": "StringLiteral",
-      "offset": 765,
+      "offset": 790,
       "length": 12,
       "value": "\"nationalId\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Model\/FailedVerificationStatusResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1020,
+      "offset": 1045,
       "length": 12,
       "value": "\"nationalId\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Model\/FailedVerificationStatusResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1020,
+      "offset": 1045,
       "length": 12,
       "value": "\"nationalId\""
     },
@@ -65532,266 +66020,245 @@
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/PassportSuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 19432,
-      "length": 22,
-      "value": "\"Image: \""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/PassportSuccessViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 19453,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/PassportSuccessViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 19505,
-      "length": 20,
-      "value": "\"Couldn't get image\""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/PassportSuccessViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 19622,
+      "offset": 19626,
       "length": 50,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/PassportSuccessViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 19669,
+      "offset": 19673,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/PassportSuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 19671,
+      "offset": 19675,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/PassportSuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 19808,
+      "offset": 19812,
       "length": 51,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/PassportSuccessViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 19855,
+      "offset": 19859,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/PassportSuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 19857,
+      "offset": 19861,
       "length": 1,
       "value": "\"%\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/PassportSuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 20493,
+      "offset": 20497,
       "length": 12,
       "value": "\"SUCCESSFUL\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/PassportSuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 20578,
+      "offset": 20582,
       "length": 9,
       "value": "\"Success\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/PassportSuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 20660,
+      "offset": 20664,
       "length": 9,
       "value": "\"SUCCESS\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/PassportSuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 20673,
+      "offset": 20677,
       "length": 6,
       "value": "\"True\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/PassportSuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 20682,
+      "offset": 20686,
       "length": 7,
       "value": "\"False\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/PassportSuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 20756,
+      "offset": 20760,
       "length": 12,
       "value": "\"SUCCESSFUL\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/PassportSuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 20838,
+      "offset": 20842,
       "length": 9,
       "value": "\"Success\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/PassportSuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 20917,
+      "offset": 20921,
       "length": 9,
       "value": "\"SUCCESS\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/PassportSuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 20957,
+      "offset": 20961,
       "length": 13,
       "value": "\"verify-true\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/PassportSuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21001,
+      "offset": 21005,
       "length": 11,
       "value": "\"failed-ic\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/PassportSuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21250,
+      "offset": 21254,
       "length": 5,
       "value": "\"N\/A\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/PassportSuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21326,
+      "offset": 21330,
       "length": 6,
       "value": "\"%.2f\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/PassportSuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21386,
+      "offset": 21390,
       "length": 4,
       "value": "\"90\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/PassportSuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21415,
+      "offset": 21419,
       "length": 9,
       "value": "\"Perfect\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/PassportSuccessViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 21472,
+      "offset": 21476,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/PassportSuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21491,
+      "offset": 21495,
       "length": 4,
       "value": "\"61\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/PassportSuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21498,
+      "offset": 21502,
       "length": 4,
       "value": "\"89\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/PassportSuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21524,
+      "offset": 21528,
       "length": 6,
       "value": "\"Good\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/PassportSuccessViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 21578,
+      "offset": 21582,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/PassportSuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21597,
+      "offset": 21601,
       "length": 4,
       "value": "\"40\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/PassportSuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21604,
+      "offset": 21608,
       "length": 4,
       "value": "\"60\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/PassportSuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21630,
+      "offset": 21634,
       "length": 6,
       "value": "\"Fair\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/PassportSuccessViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 21686,
+      "offset": 21690,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/PassportSuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21705,
+      "offset": 21709,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/PassportSuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21711,
+      "offset": 21715,
       "length": 4,
       "value": "\"39\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/PassportSuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21737,
+      "offset": 21741,
       "length": 5,
       "value": "\"Bad\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/PassportSuccessViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 21786,
+      "offset": 21790,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/PassportSuccessViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21829,
+      "offset": 21833,
       "length": 3,
       "value": "\"-\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/Success\/PassportSuccessViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 22207,
+      "offset": 22211,
       "length": 4,
       "value": "true"
     },
@@ -66197,142 +66664,79 @@
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CameraSelectionViewController.swift",
       "kind": "StringLiteral",
-      "offset": 16963,
-      "length": 16,
-      "value": "\"Connecting....\""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CameraSelectionViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 17217,
-      "length": 14,
-      "value": "\"Connected...\""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CameraSelectionViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 17559,
+      "offset": 17012,
       "length": 15,
-      "value": "\"Processing...\""
+      "value": "\"Connecting...\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CameraSelectionViewController.swift",
       "kind": "StringLiteral",
-      "offset": 17636,
-      "length": 8,
-      "value": "\"Result\""
+      "offset": 17312,
+      "length": 13,
+      "value": "\"Connected..\""
+    },
+    {
+      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CameraSelectionViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 17701,
+      "length": 14,
+      "value": "\"Processing..\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CameraSelectionViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 18150,
+      "offset": 18211,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CameraSelectionViewController.swift",
       "kind": "StringLiteral",
-      "offset": 18771,
-      "length": 87,
-      "value": "\"Failure Reason: \""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CameraSelectionViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 18797,
-      "length": 1,
-      "value": "\" | Code: \""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CameraSelectionViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 18820,
-      "length": 11,
-      "value": "\" Description: \""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CameraSelectionViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 18857,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CameraSelectionViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 19343,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CameraSelectionViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 19414,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CameraSelectionViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 19775,
-      "length": 27,
-      "value": "\"Internal iProov SDK Error\""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CameraSelectionViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 19943,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CameraSelectionViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 20157,
+      "offset": 18959,
       "length": 21,
-      "value": "\"Validate Success...\""
+      "value": "\"Failed with reason:\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CameraSelectionViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 20262,
+      "offset": 19487,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CameraSelectionViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 19982,
+      "length": 10,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CameraSelectionViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 19991,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CameraSelectionViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 20133,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CameraSelectionViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 20981,
+      "offset": 20454,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CameraSelectionViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 21173,
       "length": 4,
       "value": "true"
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CameraSelectionViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 21028,
-      "length": 33,
-      "value": "\"No Result Decoding Base64 Image\""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CameraSelectionViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 21152,
-      "length": 21,
-      "value": "\"Validate Failure...\""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CameraSelectionViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 21383,
-      "length": 23,
-      "value": "\"Invalid base64 string\""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CameraSelectionViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 21526,
-      "length": 41,
-      "value": "\"Failed to create image from base64 data\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/Util\/NotificationCentreManager.swift",
@@ -66340,6 +66744,13 @@
       "offset": 193,
       "length": 24,
       "value": "\"AUTHENTICATION_FAILURE\""
+    },
+    {
+      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/Util\/NotificationCentreManager.swift",
+      "kind": "StringLiteral",
+      "offset": 264,
+      "length": 23,
+      "value": "\"VERIFICATION_COMPLETE\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/Extension\/UIColor+Extension.swift",
@@ -66953,357 +67364,350 @@
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 1706,
+      "offset": 1798,
       "length": 27,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 1719,
+      "offset": 1811,
       "length": 1,
       "value": "\":\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 1732,
+      "offset": 1824,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
       "kind": "Array",
-      "offset": 1850,
+      "offset": 1942,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2068,
+      "offset": 2160,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2323,
+      "offset": 2415,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 2802,
-      "length": 33,
-      "value": "\"Missing Client Key + Secret Key\""
+      "offset": 2898,
+      "length": 27,
+      "value": "\"Missing client\/secret key\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 3097,
+      "offset": 3187,
       "length": 15,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 3111,
+      "offset": 3201,
       "length": 24,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 3134,
+      "offset": 3224,
       "length": 12,
       "value": "\"x-api-auth\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 3315,
+      "offset": 3405,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 3355,
+      "offset": 3445,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 3809,
-      "length": 15,
-      "value": "\"JSON: \""
+      "offset": 3915,
+      "length": 22,
+      "value": "\"Raw JSON: \""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 3823,
+      "offset": 3936,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3959,
+      "offset": 4072,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3965,
+      "offset": 4078,
       "length": 3,
       "value": "299"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
-      "kind": "StringLiteral",
-      "offset": 4196,
-      "length": 22,
-      "value": "\"Main Error: \""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
-      "kind": "StringLiteral",
-      "offset": 4217,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
-      "kind": "StringLiteral",
-      "offset": 4788,
-      "length": 21,
-      "value": "\"Sub Error: \""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
-      "kind": "StringLiteral",
-      "offset": 4808,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 4949,
+      "offset": 5153,
       "length": 3,
       "value": "401"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 5617,
+      "offset": 5827,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 5815,
+      "offset": 6025,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 5907,
+      "offset": 6117,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 6789,
+      "offset": 6999,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 6821,
+      "offset": 7031,
       "length": 43,
       "value": "\"multipart\/form-data; boundary=\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 6863,
+      "offset": 7073,
       "length": 24,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 6886,
+      "offset": 7096,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 7095,
-      "length": 33,
-      "value": "\"Missing Client Key + Secret Key\""
+      "offset": 7309,
+      "length": 27,
+      "value": "\"Missing client\/secret key\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 7362,
+      "offset": 7721,
       "length": 15,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 7376,
+      "offset": 7735,
       "length": 24,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 7399,
+      "offset": 7758,
       "length": 12,
       "value": "\"x-api-auth\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 7766,
+      "offset": 8138,
       "length": 23,
       "value": "\"Invalid response type\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7797,
+      "offset": 8169,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7886,
-      "length": 3,
-      "value": "200"
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7892,
-      "length": 3,
-      "value": "299"
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 7990,
-      "length": 14,
-      "value": "\"Server error\""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
-      "kind": "StringLiteral",
-      "offset": 8197,
+      "offset": 8332,
       "length": 9,
       "value": "\"No data\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 8214,
+      "offset": 8349,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8438,
+      "length": 3,
+      "value": "200"
+    },
+    {
+      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8444,
+      "length": 3,
+      "value": "299"
+    },
+    {
+      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 8839,
+      "length": 14,
+      "value": "\"Server Error\""
+    },
+    {
+      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 8903,
+      "length": 14,
+      "value": "\"Server Error\""
+    },
+    {
+      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 9099,
+      "length": 14,
+      "value": "\"Server Error\""
+    },
+    {
+      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9121,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 8817,
+      "offset": 9742,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 9238,
+      "offset": 10163,
       "length": 37,
       "value": "\"Upload: \""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 9274,
+      "offset": 10199,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 9323,
+      "offset": 10248,
       "length": 25,
       "value": "\"Image upload successful\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 9588,
+      "offset": 10513,
       "length": 19,
       "value": "\"--\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 9602,
+      "offset": 10527,
       "length": 1,
       "value": "\"\r\n\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 9657,
+      "offset": 10582,
       "length": 57,
       "value": "\"Content-Disposition: form-data; name=\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 9703,
+      "offset": 10628,
       "length": 1,
       "value": "\"\"\r\n\r\n\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 9764,
+      "offset": 10689,
       "length": 14,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 9773,
+      "offset": 10698,
       "length": 1,
       "value": "\"\r\n\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 9843,
+      "offset": 10768,
       "length": 21,
       "value": "\"--\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Service\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 9857,
+      "offset": 10782,
       "length": 2,
       "value": "\"--\r\n\""
     },
@@ -67848,113 +68252,85 @@
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/Extension\/String+Extension.swift",
-      "kind": "StringLiteral",
-      "offset": 4456,
-      "length": 57,
-      "value": "\"Seen \""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/Extension\/String+Extension.swift",
-      "kind": "StringLiteral",
-      "offset": 4471,
-      "length": 1,
-      "value": "\" \""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/Extension\/String+Extension.swift",
       "kind": "IntegerLiteral",
-      "offset": 4504,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/Extension\/String+Extension.swift",
-      "kind": "StringLiteral",
-      "offset": 4506,
-      "length": 5,
-      "value": "\" times\""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/Extension\/String+Extension.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4821,
+      "offset": 4823,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/Extension\/String+Extension.swift",
       "kind": "IntegerLiteral",
-      "offset": 5192,
+      "offset": 5194,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/Extension\/String+Extension.swift",
       "kind": "IntegerLiteral",
-      "offset": 5324,
+      "offset": 5326,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/Extension\/String+Extension.swift",
       "kind": "IntegerLiteral",
-      "offset": 5470,
+      "offset": 5472,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/Extension\/String+Extension.swift",
       "kind": "StringLiteral",
-      "offset": 5487,
+      "offset": 5489,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/Extension\/String+Extension.swift",
       "kind": "StringLiteral",
-      "offset": 5513,
+      "offset": 5515,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/Extension\/String+Extension.swift",
       "kind": "StringLiteral",
-      "offset": 5540,
+      "offset": 5542,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/Extension\/String+Extension.swift",
       "kind": "StringLiteral",
-      "offset": 5566,
+      "offset": 5568,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/Extension\/String+Extension.swift",
       "kind": "StringLiteral",
-      "offset": 5583,
+      "offset": 5585,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/Extension\/String+Extension.swift",
       "kind": "StringLiteral",
-      "offset": 5605,
+      "offset": 5607,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/Extension\/String+Extension.swift",
       "kind": "StringLiteral",
-      "offset": 5748,
+      "offset": 5750,
       "length": 8,
       "value": "\"yyMMdd\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/Extension\/String+Extension.swift",
       "kind": "StringLiteral",
-      "offset": 5860,
+      "offset": 5862,
       "length": 14,
       "value": "\"MMMM d, yyyy\""
     },
@@ -74695,35 +75071,35 @@
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/Util\/NFCManager.swift",
       "kind": "StringLiteral",
-      "offset": 4159,
-      "length": 23,
-      "value": "\"Messages: \""
+      "offset": 4143,
+      "length": 13,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/Util\/NFCManager.swift",
       "kind": "StringLiteral",
-      "offset": 4181,
+      "offset": 4155,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/Util\/NFCManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 4318,
+      "offset": 4292,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/Util\/NFCManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 4428,
+      "offset": 4402,
       "length": 3,
       "value": "500"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Helper\/Util\/NFCManager.swift",
       "kind": "StringLiteral",
-      "offset": 6197,
+      "offset": 6171,
       "length": 22,
       "value": "\"Invalid payload size\""
     },
@@ -77166,42 +77542,49 @@
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
       "kind": "StringLiteral",
-      "offset": 8838,
-      "length": 52,
-      "value": "\"TakeASelfie: Cannot construct capture device input\""
+      "offset": 8977,
+      "length": 10,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
       "kind": "StringLiteral",
-      "offset": 8941,
+      "offset": 8986,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 9080,
       "length": 40,
       "value": "\"TakeASelfie: Cannot get capture device\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
       "kind": "StringLiteral",
-      "offset": 9463,
+      "offset": 9602,
       "length": 4,
       "value": "\"Ok\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10303,
+      "offset": 10442,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
       "kind": "StringLiteral",
-      "offset": 10456,
+      "offset": 10595,
       "length": 33,
       "value": "\"Capture session is not running.\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
       "kind": "StringLiteral",
-      "offset": 10602,
+      "offset": 10741,
       "length": 32,
       "value": "\"Photo output is not available.\""
     },
@@ -77215,266 +77598,252 @@
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
       "kind": "StringLiteral",
-      "offset": 12096,
+      "offset": 12235,
       "length": 4,
       "value": "\"Ok\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 12161,
+      "offset": 12300,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 13026,
+      "offset": 13165,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 13257,
+      "offset": 13396,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 13362,
+      "offset": 13501,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 13545,
+      "offset": 13684,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 14227,
+      "offset": 14366,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
       "kind": "StringLiteral",
-      "offset": 14267,
+      "offset": 14406,
       "length": 23,
       "value": "\"Searching for face...\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 14496,
+      "offset": 14635,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
       "kind": "StringLiteral",
-      "offset": 14536,
+      "offset": 14675,
       "length": 23,
       "value": "\"Searching for face...\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 14629,
+      "offset": 14768,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 14668,
+      "offset": 14807,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 14696,
+      "offset": 14835,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
       "kind": "StringLiteral",
-      "offset": 14735,
+      "offset": 14874,
       "length": 48,
       "value": "\"Face too far, please move closer to the camera\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 14813,
+      "offset": 14952,
       "length": 4,
       "value": "10.9"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
       "kind": "StringLiteral",
-      "offset": 14855,
+      "offset": 14994,
       "length": 53,
       "value": "\"Face too close, please move farther from the camera\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 14961,
+      "offset": 15100,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 15003,
+      "offset": 15142,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
       "kind": "StringLiteral",
-      "offset": 15044,
+      "offset": 15183,
       "length": 20,
       "value": "\"Done, take picture\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 15099,
-      "length": 23,
-      "value": "\"Distance: \""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 15121,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 15527,
+      "offset": 15668,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 15567,
+      "offset": 15708,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
       "kind": "StringLiteral",
-      "offset": 15608,
+      "offset": 15749,
       "length": 23,
       "value": "\"Searching for face...\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 15832,
+      "offset": 15973,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 15889,
+      "offset": 16030,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 16043,
+      "offset": 16184,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 16083,
+      "offset": 16224,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
       "kind": "StringLiteral",
-      "offset": 16124,
+      "offset": 16265,
       "length": 23,
       "value": "\"Searching for face...\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
       "kind": "StringLiteral",
-      "offset": 16480,
+      "offset": 16621,
       "length": 23,
       "value": "\"Searching for face...\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
       "kind": "StringLiteral",
-      "offset": 16530,
+      "offset": 16671,
       "length": 79,
       "value": "\"Make sure person’s head is within demarcated region to get accurate results\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
       "kind": "StringLiteral",
-      "offset": 17299,
+      "offset": 17440,
       "length": 34,
       "value": "\"Error capturing photo: \""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
       "kind": "StringLiteral",
-      "offset": 17332,
+      "offset": 17473,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 18193,
+      "offset": 18334,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 18392,
+      "offset": 18533,
       "length": 4,
       "value": "0.75"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 18939,
+      "offset": 19080,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 19047,
+      "offset": 19188,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/nii\/Desktop\/MetricSDK\/MetricSDK\/Module\/Verification\/CapturePhotoViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 19280,
+      "offset": 19421,
       "length": 3,
       "value": "1.5"
     },

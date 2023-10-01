@@ -1,7 +1,7 @@
 PODS:
   - iProov (10.3.1):
     - Starscream (= 4.0.4)
-  - MetricSDK (1.0.0-rc5):
+  - MetricSDK (1.0.3):
     - iProov (~> 10.3.1)
     - OpenSSL-Universal (~> 1.1.2200)
     - Starscream (~> 4.0.4)
@@ -23,10 +23,10 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   iProov: d6054523a5578386f183499d72621129e199a5c1
-  MetricSDK: 90f6b72afa3e9f7ed8881b30d60b5c3147ce0553
+  MetricSDK: b758cc21ed057c08ef92f7eb18c23528cfcb4030
   OpenSSL-Universal: 6e1ae0555546e604dbc632a2b9a24a9c46c41ef6
   Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
 
-PODFILE CHECKSUM: 4fd7ca1d481bba3b1307a47375130e10d782d7c9
+PODFILE CHECKSUM: 9e910c7468bfc42b80d3b797439f2b835a8c884c
 
 COCOAPODS: 1.12.1

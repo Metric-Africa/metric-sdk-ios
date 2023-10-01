@@ -293,8 +293,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class NSString;
 @class NSBundle;
 
-SWIFT_CLASS("_TtC9MetricSDK9LaunchSDK")
-@interface LaunchSDK : UIViewController
+SWIFT_CLASS("_TtC9MetricSDK15LaunchMetricSDK")
+@interface LaunchMetricSDK : UIViewController
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
@@ -722,8 +722,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class NSString;
 @class NSBundle;
 
-SWIFT_CLASS("_TtC9MetricSDK9LaunchSDK")
-@interface LaunchSDK : UIViewController
+SWIFT_CLASS("_TtC9MetricSDK15LaunchMetricSDK")
+@interface LaunchMetricSDK : UIViewController
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;

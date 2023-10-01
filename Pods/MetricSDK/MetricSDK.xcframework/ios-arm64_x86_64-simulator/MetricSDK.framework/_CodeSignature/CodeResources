@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/MetricSDK-Swift.h</key>
 		<data>
-		lUsGpDFvCL0+A8M3znl8zBmtzlY=
+		QA1TpHGcKHgyZJPZEQTziDge7Ss=
 		</data>
 		<key>Headers/MetricSDK.h</key>
 		<data>
@@ -26,43 +26,43 @@
 		</data>
 		<key>Modules/MetricSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		7xT2byrXf4irWz9AIYjSYPKvO54=
+		tESrvz3ECNIE+xmXXjkinB8uhu0=
 		</data>
 		<key>Modules/MetricSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		WJToTLYYx7SQmAywFG7lgsvBJXY=
+		7NFruwrx4z5udJCKapJtepz2b9E=
 		</data>
 		<key>Modules/MetricSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		sHGzWxM48YlY+uFB2e4RaAoNcG8=
+		py1dJrMG+VSmik2D7Cu/ki+aaXY=
 		</data>
 		<key>Modules/MetricSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		WJToTLYYx7SQmAywFG7lgsvBJXY=
+		7NFruwrx4z5udJCKapJtepz2b9E=
 		</data>
 		<key>Modules/MetricSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		PAw3wimq9+KWoD1rVqYPaWIJ/30=
+		uVNk4SWldJHWE6pabIqg0O0/YTU=
 		</data>
 		<key>Modules/MetricSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		7xT2byrXf4irWz9AIYjSYPKvO54=
+		tESrvz3ECNIE+xmXXjkinB8uhu0=
 		</data>
 		<key>Modules/MetricSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		QdVybu43yaEarLbCprP7fJBhy3Q=
+		abb5DYK53lt7j0q4nBCCoVLQO80=
 		</data>
 		<key>Modules/MetricSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		6Koy6RUl6gSdJD2ftqBSwZUVn+o=
+		EqgP0lSDhLe3Aj5Kqbsmx8yJs50=
 		</data>
 		<key>Modules/MetricSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		QdVybu43yaEarLbCprP7fJBhy3Q=
+		abb5DYK53lt7j0q4nBCCoVLQO80=
 		</data>
 		<key>Modules/MetricSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		gr58ksUScIqi9pSkekPYGeXJ63g=
+		QqM14uke+pXKdvp+vxUmkP7LvoQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -106,7 +106,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q5vtaKRGaGaYfTngxiHr0JDJqLQWB+kC2D2e/ceuqcQ=
+			jXp45OXe6tmN8iXv4zqPGNBPgIsCc35y4ILQcfVPUHs=
 			</data>
 		</dict>
 		<key>Headers/MetricSDK.h</key>
@@ -127,70 +127,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			v4bm7U1k7yM63Lio4QYBBDUeTMv7VoCIGsjAN1eMOg4=
+			aMPRyVGq2iwwTy1Pq9DVQQP3UTbbAZ05ECl22zPJm4o=
 			</data>
 		</dict>
 		<key>Modules/MetricSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KCtuvMSAm0lxtKLP5NHoeZdJC17kpENDBlw10KOrFpU=
+			/knNAQYMAj3dyM9kU8C1e5B4JBB3Hm7i4A0wEoMPJyU=
 			</data>
 		</dict>
 		<key>Modules/MetricSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			n2OMd2XPKP9YmhvHHcJ0mqmau0BBxG5dBwyxg79cH6k=
+			/dtBBYwlXmfWUH/B5bz17g3dZO+1thnc0EzzyS4rHBA=
 			</data>
 		</dict>
 		<key>Modules/MetricSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KCtuvMSAm0lxtKLP5NHoeZdJC17kpENDBlw10KOrFpU=
+			/knNAQYMAj3dyM9kU8C1e5B4JBB3Hm7i4A0wEoMPJyU=
 			</data>
 		</dict>
 		<key>Modules/MetricSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dhQPWO6bRD16w386FEJrFGNx/p83oMn1q7i8a17PjkM=
+			eeMaATffW54DDAkniNAHgF+1kg7FS4m03AQWt5KNZIs=
 			</data>
 		</dict>
 		<key>Modules/MetricSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			v4bm7U1k7yM63Lio4QYBBDUeTMv7VoCIGsjAN1eMOg4=
+			aMPRyVGq2iwwTy1Pq9DVQQP3UTbbAZ05ECl22zPJm4o=
 			</data>
 		</dict>
 		<key>Modules/MetricSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aianX5ZK3vPpPKooSDde70IGffwHcNVez0IvsVy/0yg=
+			jySlXZEF/p+gHNdmcoA2IRYHD1ZqDo/xiGUyHx53qog=
 			</data>
 		</dict>
 		<key>Modules/MetricSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OTF88SL9vPMVWc5A7mE8WGV1kQnYb2ld/3QlBs43sME=
+			pZHkQEYNlCNMaAvoX/6ybV5WMV4WdjFTQRmS3vRH8/A=
 			</data>
 		</dict>
 		<key>Modules/MetricSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aianX5ZK3vPpPKooSDde70IGffwHcNVez0IvsVy/0yg=
+			jySlXZEF/p+gHNdmcoA2IRYHD1ZqDo/xiGUyHx53qog=
 			</data>
 		</dict>
 		<key>Modules/MetricSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ypjyZxolWh6b/LIHJLkh81fqiC/RTjFA40HfmJgikPI=
+			j/UNepTGvyzbEbfRAXZX47hmm6RgBjKAZtsATOfe+gs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
