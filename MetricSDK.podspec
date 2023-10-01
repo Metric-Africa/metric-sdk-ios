@@ -1,6 +1,6 @@
  Pod::Spec.new do |s|
     s.name              = 'MetricSDK'
-    s.version           = '1.0.3'
+    s.version           = '1.0.4'
     s.summary           = 'Metric iOS SDK for Identity Verification'
     s.homepage          = 'https://github.com/Metric-Africa/metric-sdk-ios'
 
@@ -8,7 +8,7 @@
     s.license           = { :type => 'Commercial', :file => 'LICENSE' }
 
     s.platform          = :ios
-    s.source            = { :http => 'https://github.com/Metric-Africa/metric-sdk-ios/releases/download/1.0.3/MetricSDK.zip' }
+    s.source            = { :http => 'https://github.com/Metric-Africa/metric-sdk-ios/releases/download/v1.0.4/MetricSDK.zip' }
 
     s.ios.deployment_target = '15.0'
     s.swift_version = '5.5'
