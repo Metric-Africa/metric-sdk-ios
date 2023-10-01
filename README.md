@@ -185,7 +185,7 @@ In modern Swift, specifically from Swift 4.2 onwards, you generally do not need 
 deinit{
      NotificationCenter.default.removeObserver(self, name: NotificationKeys.VERIFICATION_COMPLETE, object: nil)
 }
-
+```
 
 
 
