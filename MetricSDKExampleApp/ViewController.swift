@@ -36,10 +36,10 @@ class ViewController: UIViewController {
             switch outcome {
             case .success:
                 //update your UI, etc..
-                print("Verification Successful")
+                print("Verification successful")
             case .failed(let reason):
                 //update your UI, etc..
-                print("Verification Failed due to: \(reason)")
+                print("Session failed: \(reason)")
             default:
                 break
             }
