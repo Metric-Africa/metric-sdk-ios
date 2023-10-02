@@ -65,6 +65,9 @@ and run the follwing commands
  1. `pod deintegrate`
  2. `pod install`
 
+
+ - Quit XCode and open the pod generated .xcworkspace file.
+
 ## Initializing the SDK
 
 1. First, import MetricSDK into your project within your AppDelegate class
