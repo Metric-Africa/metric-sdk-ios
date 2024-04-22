@@ -1,6 +1,6 @@
  Pod::Spec.new do |s|
     s.name              = 'MetricSDK'
-    s.version           = '1.0.43'
+    s.version           = '1.0.44'
     s.summary           = 'Metric iOS SDK for Identity Verification'
     s.homepage          = 'https://github.com/Metric-Africa/metric-sdk-ios'
 
@@ -19,6 +19,7 @@
     s.dependency 'iProov', '~> 10.3.1'
     s.dependency 'OpenSSL-Universal', '~> 1.1.2200'
     s.dependency 'Starscream', '~> 4.0.4'
+    s.dependency 'OZLivenessSDK', '~> 8.6.0'
    
     s.ios.vendored_frameworks = 'MetricSDK.xcframework','iProov.xcframework', 'OpenSSL.xcframework'
 end
