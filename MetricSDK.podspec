@@ -21,5 +21,5 @@
     s.dependency 'Starscream', '~> 4.0.4'
     s.dependency 'OZLivenessSDK', '~> 8.6.0'
    
-    s.ios.vendored_frameworks = 'MetricSDK.xcframework','iProov.xcframework', 'OpenSSL.xcframework', 'OZLivenessSDK.xcframework'
+    s.ios.vendored_frameworks = 'MetricSDK.xcframework','iProov.xcframework', 'OpenSSL.xcframework', 'Starscream.xcframework', 'OZLivenessSDK.xcframework'
 end
