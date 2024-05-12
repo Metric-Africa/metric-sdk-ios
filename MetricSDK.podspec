@@ -19,7 +19,7 @@
     s.dependency 'iProov', '~> 10.3.1'
     s.dependency 'OpenSSL-Universal', '~> 1.1.2200'
     s.dependency 'Starscream', '~> 4.0.4'
-    s.dependency 'OZLivenessSDK', '~> 8.6.0'
+    #s.dependency 'OZLivenessSDK', '~> 8.6.0'
    
-    s.ios.vendored_frameworks = 'MetricSDK.xcframework','iProov.xcframework', 'OpenSSL.xcframework', 'Starscream.xcframework', 'OZLivenessSDK.xcframework'
+    s.ios.vendored_frameworks = 'MetricSDK.xcframework','iProov.xcframework', 'OpenSSL.xcframework', 'Starscream.xcframework'
 end
