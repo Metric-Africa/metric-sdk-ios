@@ -13,8 +13,8 @@
     s.ios.deployment_target = '15.0'
     s.swift_version = '5.5'
 
-    #s.pod_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
-    #s.user_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
+    s.pod_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
+    s.user_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
 
     s.dependency 'iProov', '~> 10.3.1'
     s.dependency 'OpenSSL-Universal', '~> 1.1.2200'
