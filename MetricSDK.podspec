@@ -1,4 +1,4 @@
- Pod::Spec.new do |s|
+Pod::Spec.new do |s|
     s.name              = 'MetricSDK'
     s.version           = '1.0.501'
     s.summary           = 'Metric iOS SDK for Identity Verification'
@@ -10,7 +10,7 @@
     s.platform          = :ios
     s.source            = { :http => 'https://github.com/Metric-Africa/metric-sdk-ios/releases/download/v1.0.501/MetricSDK.zip' }
 
-    s.ios.deployment_target = '15.0'
+    s.ios.deployment_target = '13.0'
     s.swift_version = '5.5'
 
     s.pod_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
@@ -18,8 +18,7 @@
 
     s.dependency 'iProov', '~> 10.3.1'
     s.dependency 'OpenSSL-Universal', '~> 1.1.2200'
-    s.dependency 'Starscream', '~> 4.0.4'
-    #s.dependency 'OZLivenessSDK', '~> 8.6.0'
-   
-    s.ios.vendored_frameworks = 'MetricSDK.xcframework','iProov.xcframework', 'OpenSSL.xcframework'
+    s.dependency 'OZLivenessSDK', '~> 8.7.0'
+
+    s.ios.vendored_frameworks = 'MetricSDK.xcframework','iProov.xcframework','OpenSSL.xcframework', 'OZLivenessSDK.xcframework'
 end
