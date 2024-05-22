@@ -3,6 +3,7 @@
 
 * Minor additions including more vendors.
 * Added sheet for selfie taking tips.
+* Drop min iOS target to iOS12.X+
 
 ## 1.0.401 2024-03-19
 
