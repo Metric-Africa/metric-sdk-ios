@@ -1,3 +1,10 @@
+## 1.0.503 2024-05-24
+* Add PrivacyInfo file
+
+* Minor additions including more vendors.
+* Added sheet for selfie taking tips.
+* Drop min iOS target to iOS12.X+
+
 
 ## 1.0.502 2024-05-18
 
