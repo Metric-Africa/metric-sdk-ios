@@ -26,7 +26,7 @@ Integration with your app is supported via CocoaPods.
 2. Add the following to your Podfile (inside the target section):
 
 ```sh
-pod 'MetricSDK', :podspec => 'https://raw.githubusercontent.com/Metric-Africa/metric-sdk-ios/main/MetricSDK.podspec'
+pod 'MetricSDK', '= 1.0.504'
 ```
 3. Run `pod install`.
 
