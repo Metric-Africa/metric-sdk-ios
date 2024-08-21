@@ -1,3 +1,8 @@
+## 1.0.505 2024-07-30
+* Minor internal improvements
+* Verification success doesn't display personal details.
+* Extra error display dialog for invalid sessions.
+
 ## 1.0.503 2024-05-24
 * Add PrivacyInfo file
 
