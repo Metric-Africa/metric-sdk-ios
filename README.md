@@ -1,5 +1,4 @@
 # Metric SDK iOS
-READING TIME: 4 MIN READ
 
 ## Introduction
 The Metric iOS SDK enables you to integrate Metric into your iOS app. We also have an Android SDK[Insert Link], Web SDK[Insert Link].
