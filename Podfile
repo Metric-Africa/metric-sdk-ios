@@ -7,7 +7,7 @@ target 'MetricSDKExampleApp' do
   use_frameworks!
 
   # Pods for MetricSDKExampleApp
-  pod 'MetricSDK', :podspec => 'https://raw.githubusercontent.com/Metric-Africa/metric-sdk-ios/main/MetricSDK.podspec'
+  pod 'MetricSDK', '= 1.0.504'
 end
 
 
