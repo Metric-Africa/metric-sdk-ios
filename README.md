@@ -25,7 +25,7 @@ Integration with your app is supported via CocoaPods.
 2. Add the following to your Podfile (inside the target section):
 
 ```sh
-pod 'MetricSDK', '= 1.0.504'
+pod 'MetricSDK', '= 1.0.505'
 ```
 3. Run `pod install`.
 
