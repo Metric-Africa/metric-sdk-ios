@@ -36,35 +36,6 @@ The Metric iOS SDK has a dependency on
 
 These dependencies will be automatically included via CocoaPods.
 
-
-## XCode 14.0+ Error
-There's a dynamic linking issue on  macOS/iOS for the newer XCode versions for certain dynamic frameworks. If you ever run into `dyld` error like below after running `pod install` and trying to run your project,
-
-```sh
-dyld[532]: Symbol not found: __ZN5swift34swift50override_conformsToProtocolEPKNS_14TargetMetadataINS_9InProcessEEEPKNS_24TargetProtocolDescriptorIS1_EEPFPKNS_18TargetWitnessTableIS1_EES4_S8_E
-  Referenced from: <CF434E50-4753-32B1-BC49-77FF3D123A82> /private/var/containers/Bundle/Application/AD967DEA-F01C-4CC7-A8D3-00A0911EBBC0/SDKSample.app/Frameworks/iProov.framework/iProov
-  Expected in:     <B8F7D7D2-01AE-35BF-B0B7-91D6488B6E35> /private/var/containers/Bundle/Application/AD967DEA-F01C-4CC7-A8D3-00A0911EBBC0/SDKSample.app/Frameworks/Starscream.framework/Starscream
-```
-put the following lines of code at the bottom of your `Podfile`.
-```sh
-...
-post_install do |installer|
-  installer.pods_project.targets.each do |target|
-    target.build_configurations.each do |config|
-      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '11.0'
-      config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
-    end
-  end
-end
-...
-```
-
-and run the follwing commands 
-
- 1. `pod deintegrate`
- 2. `pod install`
-
-
  - Quit XCode and open the pod generated .xcworkspace file.
 
 ## Initializing the SDK
@@ -116,7 +87,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         ...
-        config.environment = Environment.sandbox
+        config.environment = .sandbox
         config.brandLogoImageUrl = "htttps://example/image.png"
         config.brandPrimaryColor = "" //eg. #BBBBBB
         MetricService.configure(config)
@@ -125,6 +96,18 @@ class ViewController: UIViewController {
     ...
 }
 ```
+
+##Extra MetricSDK Information
+There is a DataMode enum value[.basic, .extended] you can configure when initializing the SDK.
+By default, this mode is .basic. If you need to view the verification transaction id, set this to .extended
+and as part of your display, you will get this transaction id.
+```
+...
+config.dataMode = .extended //default: .basic
+...
+```
+
+
 ### Launch SDK
 To launch the Metric SDK and initiate user verification, we would first need to generate a token. Information on token generation can be found here [https://docs.metric.africa/metric-for-developers/apis/generate-tokens]
 
