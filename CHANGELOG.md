@@ -1,3 +1,6 @@
+## 1.0.5057 2024-12-08
+* Add extended and basic data modes for edditional info on verification success screen
+
 ## 1.0.505 2024-07-30
 * Minor internal improvements
 * Verification success doesn't display personal details.
