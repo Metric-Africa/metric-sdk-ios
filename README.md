@@ -97,7 +97,7 @@ class ViewController: UIViewController {
 }
 ```
 
-##Extra MetricSDK Information
+## Extra MetricSDK Information
 There is a DataMode enum value[.basic, .extended] you can configure when initializing the SDK.
 By default, this mode is .basic. If you need to view the verification transaction id, set this to .extended
 and as part of your display, you will get this transaction id.
