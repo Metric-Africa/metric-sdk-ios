@@ -149,7 +149,7 @@ class ViewController: UIViewController {
  3. Access the extended payload in the `.success` case.
 
  Example:
- ```swift
+ ```
  @objc func handleVerificationOutcome(_ notification: Notification) {
      if let outcome = notification.object as? VerificationOutcome {
          switch outcome {
@@ -164,7 +164,7 @@ class ViewController: UIViewController {
      }
  }
 
-```swift
+```
 
 
 > **Important**: If you do **not** set `config.dataMode = .extended`, the `.success` case will only indicate a successful verification, without the additional customer data.
