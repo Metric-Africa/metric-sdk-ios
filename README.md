@@ -156,7 +156,7 @@ class ViewController: UIViewController {
      if let outcome = notification.object as? VerificationOutcome {
          switch outcome {
          case .success(let payload):
-             // Extended data includes customerName and suid
+             // payload includes name and shortId
              print("Verification successful for \(payload)")
          case .failed(let reason):
              print("Session Failed: \(reason)")
