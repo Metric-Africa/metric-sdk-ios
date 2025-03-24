@@ -1,3 +1,4 @@
+
 # Metric SDK iOS
 
 ## Introduction
@@ -135,7 +136,7 @@ class ViewController: UIViewController {
  ### Listening for Results
  You can leverage MetricSDKs internal notification manager or use your own notification handler. Add a `NotificationCenter` observer to the `viewDidLoad()` of the view controller that launched your SDK. And pass in your @objc marked function as the selector. Eg. In this case we use `handleVerificationOutcome()`. You can call `deinit` but that's not really necessary if you're using Swift 4.2+.
  
- ```sh
+
 
  Handles the verification outcome broadcast by the system.
 
@@ -150,12 +151,13 @@ class ViewController: UIViewController {
 
  Example:
  ```sh
+ ...
  @objc func handleVerificationOutcome(_ notification: Notification) {
      if let outcome = notification.object as? VerificationOutcome {
          switch outcome {
-         case .success(let extendedData):
+         case .success(let payload):
              // Extended data includes customerName and suid
-             print("Verification successful for \(extendedData.customerName), suid: \(extendedData.suid)")
+             print("Verification successful for \(payload)")
          case .failed(let reason):
              print("Session Failed: \(reason)")
          default:
@@ -163,13 +165,13 @@ class ViewController: UIViewController {
          }
      }
  }
-
+...
 ```
 
 
-```sh
+
 > **Important**: If you do **not** set `config.dataMode = .extended`, the `.success` case will only indicate a successful verification, without the additional customer data.
-```
+
 
 In modern Swift, specifically from Swift 4.2 onwards, you generally do not need to manually remove observers for notifications, as they are automatically deregistered when the object is deallocated.
 
