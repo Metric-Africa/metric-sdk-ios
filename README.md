@@ -149,7 +149,7 @@ class ViewController: UIViewController {
  3. Access the extended payload in the `.success` case.
 
  Example:
- ```
+ ```swift
  @objc func handleVerificationOutcome(_ notification: Notification) {
      if let outcome = notification.object as? VerificationOutcome {
          switch outcome {
