@@ -1,3 +1,12 @@
+## 1.0.701 2026-02-15
+* Minor bug fixes
+
+## 1.0.700 2026-01-08
+* Minor improvements & UI changes
+
+## 1.0.600 2025-12-08
+* Minor improvements & UI changes
+
 ## 1.0.5057 2024-12-08
 * Add extended and basic data modes for edditional info on verification success screen
 
