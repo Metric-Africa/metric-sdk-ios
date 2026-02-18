@@ -7,7 +7,7 @@ target 'MetricSDKExampleApp' do
   use_frameworks!
 
   # Pods for MetricSDKExampleApp
-  pod 'MetricSDK', '= 1.0.505'
+  pod 'MetricSDK', '= 1.0.700'
 end
 
 
