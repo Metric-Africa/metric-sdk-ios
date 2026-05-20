@@ -1,185 +1,168 @@
-
-# Metric SDK iOS
-
+# MetricSDK iOS
+[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/MetricSDK.svg?style=flat-square)](https://cocoapods.org/pods/MetricSDK)
+[![Platform](https://img.shields.io/cocoapods/p/MetricSDK.svg?style=flat-square)](https://cocoapods.org/pods/MetricSDK)
+[![Swift Version](https://img.shields.io/badge/Swift-5.5+-orange.svg?style=flat-square)](https://swift.org)
 ## Introduction
-The Metric iOS SDK enables you to integrate Metric into your iOS app. We also have an Android SDK[Insert Link], Web SDK[Insert Link].
-
+The **Metric iOS SDK** enables you to seamlessly integrate identity verification into your iOS applications. 
+We also support the following platforms:
+* 🤖 **Android SDK**: [Android SDK Documentation](https://docs.metric.africa/metric-for-developers/sdks/android)
+* 🌐 **Web SDK**: [Web SDK Documentation](https://docs.metric.africa/metric-for-developers/sdks/web)
 ### Sample App
-We have a sample app that you can use to test the Metric iOS SDK. You can access it on GitHub through the following link: https://github.com/Metric-Africa/metric-sdk-ios
-
+Explore our official sample application to see a complete integration in action:
+👉 **[Metric iOS Sample App on GitHub](https://github.com/Metric-Africa/metric-sdk-ios)**
+---
 ## Prerequisites
-Make sure your system meets the following software requirements:
- - XCode 14+
-- Swift 5.0+
-- iOS 15+
-
+Ensure your development environment meets the following software requirements:
+* **Xcode**: 14.0+
+* **Swift**: 5.5+
+* **Minimum iOS Target**: iOS 13.0+
+---
 ## Installation via CocoaPods 
-Integration with your app is supported via CocoaPods.
-
-> The Metric iOS SDK is distributed as an XCFramework,
-> therefore you are required
-> to use CocoaPods 1.9.0 or newer.
-
-1. If you are not yet using CocoaPods in your project, first run sudo gem install cocoapods. (For further information on installing CocoaPods, https://guides.cocoapods.org/using/getting-started.html#installation)
-2.  Run `pod init` in your root directory of your project to create a Podfile.
-
-2. Add the following to your Podfile (inside the target section):
-
-```sh
-pod 'MetricSDK', '= <latest version>'
-```
-3. Run `pod install`.
-
-### Dependencies
-The Metric iOS SDK has a dependency on 
-[Starscream](https://github.com/daltoniam/Starscream). 
-[OpenSSL-Universal](https://github.com/krzyzanowskim/OpenSSL). 
-
-These dependencies will be automatically included via CocoaPods.
-
- - Quit XCode and open the pod generated .xcworkspace file.
-
+Integration is supported via **CocoaPods**.
+> [!IMPORTANT]
+> The Metric iOS SDK is distributed as a packaged binary (`XCFramework`), which requires **CocoaPods 1.9.0 or newer**.
+1. If CocoaPods is not yet installed on your system, install it via terminal:
+   ```bash
+   sudo gem install cocoapods
+   ```
+   *(For more information, refer to the [CocoaPods Getting Started Guide](https://guides.cocoapods.org/using/getting-started.html#installation))*
+2. Initialize CocoaPods in your project's root directory:
+   ```bash
+   pod init
+   ```
+3. Open the newly generated `Podfile` and add the dependency inside your target section:
+   ```ruby
+   pod 'MetricSDK', '~> 1.1.0'
+   ```
+4. Run the installer:
+   ```bash
+   pod install
+   ```
+5. Close Xcode completely and open the generated **`.xcworkspace`** workspace file to begin coding.
+### SDK Dependencies
+The Metric iOS SDK depends on the following libraries:
+* **[iProov](https://github.com/iproov/ios)** (Liveness Verification)
+* **[OZLivenessSDK](https://github.com/ozforensics/oz-liveness-ios-sdk)** (Biometric Analysis)
+> [!NOTE]
+> These dependencies are automatically resolved, downloaded, and configured when you run `pod install`.
+---
 ## Initializing the SDK
-
-1. First, import MetricSDK into your project within your AppDelegate class
-
-```sh
-...
+### 1. Import the SDK
+Import `MetricSDK` into your app's entry point (e.g., `AppDelegate.swift`):
+```swift
+import UIKit
 import MetricSDK
-...
 ```
-
-2. Within your didFinishLaunchingWithOptions function, you can initialise your SDK with the .initialize functon.
-
-```sh
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    ...
-        Metric.initialize(clientKey: "<Your client key here>",
-                          secretKey: "<Your secret key here>")
-     ...
-    }
+### 2. Initialize in App Launch
+Within your `application(_:didFinishLaunchingWithOptions:)` function, initialize the SDK using your developer API credentials:
+```swift
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    
+    // Initialize the SDK with client and secret keys
+    Metric.initialize(
+        clientKey: "<Your Client Key>",
+        secretKey: "<Your Secret Key>"
+    )
+    
+    return true
+}
 ```
-
-> To learn how to generate the clientKey and secretKey,
-> kindly refer to this section of the documentation.
-> https://docs.metric.africa/metric-for-developers/generate-id-and-secret-pair
-
-### Permissions
-
-###### Add an `NSCameraUsageDescription`
-
-All iOS apps which require camera access must request permission from the user, and specify this information in the Info.plist.
-
-Add an `NSCameraUsageDescription` entry to your app's Info.plist, with the reason why your app requires camera access (e.g. “To allow Metric Example App access your camera in order to verify your identity.”)
-
-### Configuration and Customization
-The `MetricSDKConfiguration` class is used to customise the look of the SDK such as colors and brand image. By default, your 
-SDK environment is set to `Environment.sanbox`. Set to `Environment.production` when ready for release.
-Call `MetricService.configure()` and pass in your configuration [Preferably in the `viewDidLoad()` of the `View Controller` that will launch the SDK] 
-
-```sh
-...
+> [!TIP]
+> To learn how to generate your developer `clientKey` and `secretKey`, refer to the [Metric API Credentials Guide](https://docs.metric.africa/metric-for-developers/generate-id-and-secret-pair).
+---
+## Permissions Configuration
+### Camera Permission
+All iOS apps requesting camera access must state their usage description in the application's `Info.plist`. 
+Add the `NSCameraUsageDescription` key to your **`Info.plist`** with a clear explanation for the user:
+```xml
+<key>NSCameraUsageDescription</key>
+<string>To allow Metric to access your camera in order to verify your identity.</string>
+```
+---
+## Configuration and Customization
+The `MetricSDKConfiguration` class allows you to tailor the look and behavior of the SDK to align with your brand. 
+By default, the SDK runs in `Environment.sandbox`. Set it to `Environment.production` when transitioning to release.
+Call `MetricService.configure(_:)` and pass in your configuration model (typically in the `viewDidLoad()` of the view controller launching the SDK):
+```swift
+import UIKit
 import MetricSDK
-...
 class ViewController: UIViewController {
-    ...
     let config = MetricSDKConfiguration()
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        ...
+        
+        // 1. Set Environment (use .production for live environments)
         config.environment = .sandbox
-        config.brandLogoImageUrl = "htttps://example/image.png"
-        config.brandPrimaryColor = "" //eg. #BBBBBB
-        config.dataMode = .extended //optional | to return customer's name and unique id of the verification
+        
+        // 2. Customize Branding & Colors
+        config.brandLogoImageUrl = "https://example.com/logo.png"
+        config.brandPrimaryColor = "#000000" // Hex string representation
+        
+        // 3. Customize Data Mode
+        // Set to .extended to retrieve customer's name and unique verification ID
+        config.dataMode = .extended 
+        
+        // 4. Apply Configuration
         MetricService.configure(config)
-       
-        ...
     }
-    ...
 }
 ```
-
-## Extra MetricSDK Information
-There is a DataMode enum value[.basic, .extended] you can configure when initializing the SDK.
-By default, this mode is .basic. If you need to view the verification transaction id, set this to .extended
-and as part of your display, you will get this transaction id.
-```
-...
-config.dataMode = .extended //default: .basic
-...
-```
-
-
-### Launch SDK
-To launch the Metric SDK and initiate user verification, we would first need to generate a token. Information on token generation can be found here [https://docs.metric.africa/metric-for-developers/apis/generate-tokens]
-
-After the token has been generated, you can launch the SDK like below:
- eg.
- 
- ```sh
-...
+### Data Modes
+The `DataMode` enum (`.basic`, `.extended`) governs what payload data is retrieved upon a successful verification:
+* **`.basic`** (Default): Performs identity verification and flags success without returning personal identifiers.
+* **`.extended`**: Returns the transaction unique ID (`suid`) and the customer's name.
+---
+## Launching the SDK
+To start user verification, you must first generate an authentication token via the Metric API. Refer to the [Token Generation API Reference](https://docs.metric.africa/metric-for-developers/apis/generate-tokens) for details.
+Once the token is generated, present the SDK launcher:
+```swift
+import UIKit
 import MetricSDK
-...
 class ViewController: UIViewController {
-    ...
-    @objc private func launchSDKPressed(){
-        let launcher = LaunchMetricSDK(token: "<token here>")
+    @objc private func launchSDKPressed() {
+        let launcher = LaunchMetricSDK(token: "<Generated Token>")
         launcher.modalPresentationStyle = .overCurrentContext
         launcher.modalTransitionStyle = .crossDissolve
-        present(launcher, animated: true, completion:nil)
+        
+        self.present(launcher, animated: true, completion: nil)
     }
-    ...
 }
 ```
- 
- ### Listening for Results
- You can leverage MetricSDKs internal notification manager or use your own notification handler. Add a `NotificationCenter` observer to the `viewDidLoad()` of the view controller that launched your SDK. And pass in your @objc marked function as the selector. Eg. In this case we use `handleVerificationOutcome()`. You can call `deinit` but that's not really necessary if you're using Swift 4.2+.
- 
-
-
- Handles the verification outcome broadcast by the system.
-
- - Note: By default, `VerificationOutcome.success` does not include customer data.
-         If you set `config.dataMode = .extended`, you can access `customerName` and `suid` 
-         from the `.success` payload.
-
- Usage:
- 1. Set `config.dataMode = .extended` before starting the verification process.
- 2. Observe the `Notification` containing the `VerificationOutcome`.
- 3. Access the extended payload in the `.success` case.
-
- Example:
- ```sh
- ...
- @objc func handleVerificationOutcome(_ notification: Notification) {
-     if let outcome = notification.object as? VerificationOutcome {
-         switch outcome {
-         case .success(let payload):
-             // payload includes name and shortId
-             print("Verification successful for \(payload)")
-         case .failed(let reason):
-             print("Session Failed: \(reason)")
-         default:
-             break
-         }
-     }
- }
-...
-```
-
-
-
-> **Important**: If you do **not** set `config.dataMode = .extended`, the `.success` case will only indicate a successful verification, without the additional customer data.
-
-
-In modern Swift, specifically from Swift 4.2 onwards, you generally do not need to manually remove observers for notifications, as they are automatically deregistered when the object is deallocated.
-
-```sh
-deinit{
-     NotificationCenter.default.removeObserver(self, name: NotificationKeys.VERIFICATION_COMPLETE, object: nil)
+---
+## Handling Verification Outcomes
+Listen to outcomes by registering a `NotificationCenter` observer in your View Controller.
+### 1. Observe the Outcome
+```swift
+override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    NotificationCenter.default.addObserver(
+        self,
+        selector: #selector(handleVerificationOutcome(_:)),
+        name: NotificationKeys.VERIFICATION_COMPLETE,
+        object: nil
+    )
 }
 ```
-
-
-
+### 2. Handle the Outcome Payload
+> [!IMPORTANT]
+> If `config.dataMode` is **not** set to `.extended`, the `.success` payload containing the customer data will be empty.
+```swift
+@objc func handleVerificationOutcome(_ notification: Notification) {
+    guard let outcome = notification.object as? VerificationOutcome else { return }
+    
+    switch outcome {
+    case .success(let payload):
+        // payload holds customer details when config.dataMode = .extended
+        print("Verification successful! Details: \(payload)")
+        
+    case .failed(let reason):
+        print("Verification Session Failed: \(reason)")
+        
+    default:
+        break
+    }
+}
+```
+> [!NOTE]
+> For Swift 4.2+, manual removal of observers is handled automatically by the OS when the view controller is deallocated, making manual `deinit` cleanups optional.
