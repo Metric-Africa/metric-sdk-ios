@@ -12,14 +12,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 - **OpenSSL Dependency**: Completely removed `OpenSSL-Universal` and its accompanying static/dynamic libraries (`OpenSSL.xcframework`) from the codebase, resolving security and vulnerability issues.
 
-### Changed
-- **NFC Cryptography Stubs**: Stubbed out OpenSSL-dependent functions (`aesMAC`, `oidToBytes`, and public key parsing in `DataGroup15` / `NFCPassportModel`) to safely bypass OpenSSL without breaking the core SDK compile targets.
-- **Example App Embedding**: Explicitly added `iProov.xcframework` and `OZLivenessSDK.xcframework` to the **Embed Frameworks** build phase of the `Example` app target to resolve dynamic link (`dyld`) runtime launching crashes.
-
-### Fixed
-- **Error Redeclaration**: Resolved the conflict of the `OpenSSLError` enum redeclaration in `NFCPassportReaderError.swift` and `OpenSSLUtils.swift`.
-- **Project Configuration Cleanliness**: Purged lingering build configurations, header, and runtime search paths (`LD_RUNPATH_SEARCH_PATHS`) associated with `OpenSSL-Universal`.
-
 ---
 
 ## [1.0.701] - 2026-02-15
