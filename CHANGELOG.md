@@ -1,3 +1,8 @@
+[1.0.702] - 2026-05-20
+Removed
+OpenSSL Dependency: Completely removed OpenSSL-Universal and its accompanying static/dynamic libraries (OpenSSL.xcframework) from the codebase, resolving security and vulnerability issues.
+
+
 ## 1.0.701 2026-02-15
 * Minor bug fixes
 
