@@ -1,4 +1,4 @@
-# Metric SDK iOS
+# MetricSDK iOS
 
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/MetricSDK.svg?style=flat-square)](https://cocoapods.org/pods/MetricSDK)
 [![Platform](https://img.shields.io/cocoapods/p/MetricSDK.svg?style=flat-square)](https://cocoapods.org/pods/MetricSDK)
