@@ -8,8 +8,8 @@
 The **Metric iOS SDK** enables you to seamlessly integrate identity verification into your iOS applications. 
 
 We also support the following platforms:
-* ü§ñ **Android SDK**: [Android SDK Documentation](https://docs.metric.africa/metric-for-developers/sdks/android)
-* üåê **Web SDK**: [Web SDK Documentation](https://docs.metric.africa/metric-for-developers/sdks/web)
+* 🤖 **Android SDK**: [Android SDK Documentation](https://docs.metric.africa/metric-for-developers/sdks/android)
+* 🕸️ **Web SDK**: [Web SDK Documentation](https://docs.metric.africa/metric-for-developers/sdks/web)
 
 > [!TIP]
 > **Looking for a quick start?** Explore our official [Metric iOS Sample App on GitHub](https://github.com/Metric-Africa/metric-sdk-ios) to see a complete integration in action.
