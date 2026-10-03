@@ -27,7 +27,8 @@ let package = Package(
             dependencies: [
                 .target(name: "MetricSDK"),
                 .product(name: "iProov", package: "ios"),
-                .product(name: "OZLivenessSDK", package: "oz-mobile-ios-sdk")
+                .product(name: "OZLivenessSDK", package: "oz-mobile-ios-sdk"),
+                .product(name: "OZLivenessSDKOnDeviceResources", package: "oz-mobile-ios-sdk")
             ],
             path: "Sources/MetricSDKWrapper"
         )
