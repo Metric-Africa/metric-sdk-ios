@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Metric-Africa/metric-sdk-ios.git",
       "state" : {
-        "revision" : "a89481091caffaee94e6cfbedb446f1ad1eb2a97",
-        "version" : "1.2.0"
+        "revision" : "ba4eb2e80536a031f88cfabf4732fd09702e4b79",
+        "version" : "1.2.2"
       }
     },
     {

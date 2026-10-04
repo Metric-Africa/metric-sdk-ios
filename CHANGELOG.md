@@ -7,29 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [1.2.2] - 2026-10-04
-
-### Added
-- **SwiftUI Integration**: The SDK now includes a built-in `.metricVerification` view modifier for seamless integration into SwiftUI architectures. No need to build custom `UIViewControllerRepresentable` wrappers.
-
----
-
 ## [1.2.1] - 2026-10-03
 
 ### Added
-- **Swift Package Manager support**: The SDK can now be installed via SPM from `https://github.com/Metric-Africa/metric-sdk-ios`. Add the **`MetricSDKSPM`** package product to your app target. Code is unchanged: continue to use `import MetricSDK`.
-- iProov (`11.0.3`) and OZ Liveness SDK (`8.7.0`, including on-device resources) are resolved and embedded automatically when installing via SPM.
+- Swift Package Manager support. Add the `MetricSDKSPM` product; code still uses `import MetricSDK`.
 
 ### Changed
-- Minimum iOS deployment target is iOS 15.0+ when installing via Swift Package Manager (CocoaPods remains iOS 13.0+).
-- Distribution is now built as an `XCFramework` zip via `build.sh`, which also outputs the SPM checksum.
-- Documentation: README updated with SPM installation instructions.
+- Minimum iOS target is 15.0+ for SPM (CocoaPods stays 13.0+).
+- Distribution built as an XCFramework zip via build.sh.
+- README updated with SPM instructions.
 
 ### Deprecated
-- CocoaPods will not receive further updates. The latest CocoaPods release remains `1.1.0`. Please migrate to Swift Package Manager.
+- CocoaPods gets no further updates; latest pod stays 1.1.0.
 
 ### Notes
-- `1.2.0` was an interim release of the SPM packaging and is superseded by `1.2.1`. Use `1.2.1` or later.
+- 1.2.0 was an interim SPM release, superseded by 1.2.1.
+
 
 ---
 
@@ -37,14 +30,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 - **OpenSSL Dependency**: Completely removed `OpenSSL-Universal` and its accompanying static/dynamic libraries (`OpenSSL.xcframework`) from the codebase, resolving security and vulnerability issues.
-
-### Changed
-- **NFC Cryptography Stubs**: Stubbed out OpenSSL-dependent functions (`aesMAC`, `oidToBytes`, and public key parsing in `DataGroup15` / `NFCPassportModel`) to safely bypass OpenSSL without breaking the core SDK compile targets.
-- **Example App Embedding**: Explicitly added `iProov.xcframework` and `OZLivenessSDK.xcframework` to the **Embed Frameworks** build phase of the `Example` app target to resolve dynamic link (`dyld`) runtime launching crashes.
-
-### Fixed
-- **Error Redeclaration**: Resolved the conflict of the `OpenSSLError` enum redeclaration in `NFCPassportReaderError.swift` and `OpenSSLUtils.swift`.
-- **Project Configuration Cleanliness**: Purged lingering build configurations, header, and runtime search paths (`LD_RUNPATH_SEARCH_PATHS`) associated with `OpenSSL-Universal`.
 
 ---
 

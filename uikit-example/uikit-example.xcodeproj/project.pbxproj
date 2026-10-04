@@ -445,7 +445,7 @@
 			repositoryURL = "https://github.com/Metric-Africa/metric-sdk-ios.git";
 			requirement = {
 				kind = exactVersion;
-				version = 1.2.0;
+				version = 1.2.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
