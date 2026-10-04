@@ -1,4 +1,4 @@
-# MetricSDK iOS
+# Metric SDK iOS
 
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/MetricSDK.svg?style=flat-square)](https://cocoapods.org/pods/MetricSDK)
 [![Platform](https://img.shields.io/cocoapods/p/MetricSDK.svg?style=flat-square)](https://cocoapods.org/pods/MetricSDK)
@@ -8,8 +8,11 @@
 The **Metric iOS SDK** enables you to seamlessly integrate identity verification into your iOS applications. 
 
 We also support the following platforms:
-* 🤖 **Android SDK**: [Android SDK Documentation](https://docs.metric.africa/metric-for-developers/sdks/android)
-* 🕸️ **Web SDK**: [Web SDK Documentation](https://docs.metric.africa/metric-for-developers/sdks/web)
+* **Android SDK**: [Android SDK Documentation](https://docs.metric.africa/metric-for-developers/sdks/android)
+* **Web SDK**: [Web SDK Documentation](https://docs.metric.africa/metric-for-developers/sdks/web)
+
+> [!TIP]
+> **Looking for a quick start?** Explore our official [Metric iOS Sample App on GitHub](https://github.com/Metric-Africa/metric-sdk-ios) to see a complete integration in action.
 
 ---
 
@@ -17,15 +20,29 @@ We also support the following platforms:
 Ensure your development environment meets the following software requirements:
 * **Xcode**: 14.0+
 * **Swift**: 5.5+
-* **Minimum iOS Target**: iOS 13.0+
+* **Minimum iOS Target**: iOS 15.0+ (Swift Package Manager) / iOS 13.0+ (CocoaPods)
 
 ---
 
-## Installation via CocoaPods 
+## Installation via Swift Package Manager (SPM)
+Integration is primarily supported and recommended via **Swift Package Manager**.
+
+1. In Xcode, navigate to **File > Add Package Dependencies...**
+2. Enter the repository URL: `https://github.com/Metric-Africa/metric-sdk-ios.git`
+3. Set the **Dependency Rule** to **Up to Next Major Version** with `1.2.1` (or choose **Exact Version** to pin a release), then click **Add Package**.
+4. When prompted to choose package products, select **`MetricSDKSPM`** and add it to your app target.
+5. Import the SDK in your code as `import MetricSDK`.
+
+> [!NOTE]
+> `MetricSDKSPM` is only the name of the package product shown in Xcode. Your code still uses `import MetricSDK`. The iProov and OZ Liveness dependencies are resolved and embedded automatically; no extra steps are needed.
+
+---
+
+## Installation via CocoaPods (Deprecated)
 Integration is supported via **CocoaPods**.
 
 > [!WARNING]
-> **CocoaPods Support Deprecation:** CocoaPods support will be phased out in future releases. We are initiating a migration to **Swift Package Manager (SPM)** as our primary method of package distribution. We strongly recommend planning your integration around SPM.
+> **CocoaPods Sunset Notice:** CocoaPods has officially entered maintenance mode. The public registry will move to a permanent read-only state on **December 2, 2026**. We will phase out CocoaPods support from this SDK prior to that deadline. We strongly recommend migrating to **Swift Package Manager (SPM)** immediately.
 
 > [!IMPORTANT]
 > The Metric iOS SDK is distributed as a packaged binary (`XCFramework`), which requires **CocoaPods 1.9.0 or newer**.
@@ -43,7 +60,7 @@ Integration is supported via **CocoaPods**.
 
 3. Open the newly generated `Podfile` and add the dependency inside your target section:
    ```ruby
-   pod 'MetricSDK', '~> 1.1.0'
+   pod 'MetricSDK', '~> 1.2.0'
    ```
 
 4. Run the installer:
