@@ -60,7 +60,7 @@ Integration is supported via **CocoaPods**.
 
 3. Open the newly generated `Podfile` and add the dependency inside your target section:
    ```ruby
-   pod 'MetricSDK', '~> 1.2.0'
+   pod 'MetricSDK', '~> 1.1.0'
    ```
 
 4. Run the installer:
