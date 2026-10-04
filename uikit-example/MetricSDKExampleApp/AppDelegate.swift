@@ -9,6 +9,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Initialize the SDK with your developer keys
         Metric.initialize(clientKey: "YOUR_CLIENT_KEY", secretKey: "YOUR_SECRET_KEY")
         
+        let config = MetricSDKConfiguration()
+        config.environment = .sandbox
+        config.brandPrimaryColor = "#000000"
+        config.dataMode = .extended
+        MetricService.configure(config)
+        
         return true
     }
 

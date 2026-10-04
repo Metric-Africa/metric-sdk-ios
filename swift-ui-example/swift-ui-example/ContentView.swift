@@ -38,7 +38,7 @@ struct ContentView: View {
         }
         .padding()
         // Ensure you replace "YOUR_TOKEN_HERE" with a valid verification token
-        .metricVerification(isPresented: $showVerification, token: "YOUR_TOKEN_HERE") { outcome in
+        .metricVerification(isPresented: $showVerification, token: "LP253PUSV") { outcome in
             switch outcome {
             case .success(let payload):
                 statusMessage = "✅ Success!\n\(String(describing: payload))"
