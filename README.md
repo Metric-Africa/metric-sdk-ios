@@ -84,27 +84,50 @@ The Metric iOS SDK depends on the following libraries:
 
 ## Initializing the SDK
 
-### 1. Import the SDK
-Import `MetricSDK` into your app's entry point (e.g., `AppDelegate.swift`):
+### SwiftUI Setup
+Import `MetricSDK` and initialize the SDK using your developer API credentials within your `App` struct's initializer:
+
+```swift
+import SwiftUI
+import MetricSDK
+
+@main
+struct MyApp: App {
+    init() {
+        // Initialize the SDK with client and secret keys
+        Metric.initialize(
+            clientKey: "<Your Client Key>",
+            secretKey: "<Your Secret Key>"
+        )
+    }
+
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
+}
+```
+
+### UIKit Setup
+Import `MetricSDK` and initialize the SDK using your developer API credentials within your `application(_:didFinishLaunchingWithOptions:)` function:
 
 ```swift
 import UIKit
 import MetricSDK
-```
 
-### 2. Initialize in App Launch
-Within your `application(_:didFinishLaunchingWithOptions:)` function, initialize the SDK using your developer API credentials:
-
-```swift
-func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    
-    // Initialize the SDK with client and secret keys
-    Metric.initialize(
-        clientKey: "<Your Client Key>",
-        secretKey: "<Your Secret Key>"
-    )
-    
-    return true
+@main
+class AppDelegate: UIResponder, UIApplicationDelegate {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        // Initialize the SDK with client and secret keys
+        Metric.initialize(
+            clientKey: "<Your Client Key>",
+            secretKey: "<Your Secret Key>"
+        )
+        
+        return true
+    }
 }
 ```
 
@@ -243,9 +266,12 @@ class ViewController: UIViewController {
 
 ---
 
-## Handling Verification Outcomes
+## Handling Verification Outcomes (UIKit Only)
 
-Listen to outcomes by registering a `NotificationCenter` observer in your View Controller.
+> [!NOTE]
+> If you are using SwiftUI, you do not need to manually observe `NotificationCenter`. The `.metricVerification` modifier handles outcomes automatically via its trailing closure.
+
+For UIKit applications, listen to outcomes by registering a `NotificationCenter` observer in your View Controller.
 
 ### 1. Observe the Outcome
 ```swift
