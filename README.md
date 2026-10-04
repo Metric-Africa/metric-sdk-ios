@@ -1,8 +1,10 @@
 # Metric SDK iOS
 
+[![Swift Package Manager](https://img.shields.io/badge/Swift_Package_Manager-compatible-brightgreen.svg?style=flat-square)](https://github.com/Metric-Africa/metric-sdk-ios)
+[![Release](https://img.shields.io/github/v/release/Metric-Africa/metric-sdk-ios?style=flat-square)](https://github.com/Metric-Africa/metric-sdk-ios/releases)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/MetricSDK.svg?style=flat-square)](https://cocoapods.org/pods/MetricSDK)
 [![Platform](https://img.shields.io/cocoapods/p/MetricSDK.svg?style=flat-square)](https://cocoapods.org/pods/MetricSDK)
-[![Swift Version](https://img.shields.io/badge/Swift-5.5+-orange.svg?style=flat-square)](https://swift.org)
+[![Swift Version](https://img.shields.io/badge/Swift-5.9+-orange.svg?style=flat-square)](https://swift.org)
 
 ## Introduction
 The **Metric iOS SDK** enables you to seamlessly integrate identity verification into your iOS applications. 
@@ -18,8 +20,8 @@ We also support the following platforms:
 
 ## Prerequisites
 Ensure your development environment meets the following software requirements:
-* **Xcode**: 14.0+
-* **Swift**: 5.5+
+* **Xcode**: 15.0+ (Swift Package Manager) / 14.0+ (CocoaPods)
+* **Swift**: 5.9+ (Swift Package Manager) / 5.5+ (CocoaPods)
 * **Minimum iOS Target**: iOS 15.0+ (Swift Package Manager) / iOS 13.0+ (CocoaPods)
 
 ---
@@ -29,7 +31,7 @@ Integration is primarily supported and recommended via **Swift Package Manager**
 
 1. In Xcode, navigate to **File > Add Package Dependencies...**
 2. Enter the repository URL: `https://github.com/Metric-Africa/metric-sdk-ios.git`
-3. Set the **Dependency Rule** to **Up to Next Major Version** with `1.2.1` (or choose **Exact Version** to pin a release), then click **Add Package**.
+3. Set the **Dependency Rule** to **Up to Next Major Version** with `1.2.2` (or choose **Exact Version** to pin a release), then click **Add Package**.
 4. When prompted to choose package products, select **`MetricSDKSPM`** and add it to your app target.
 5. Import the SDK in your code as `import MetricSDK`.
 
@@ -171,7 +173,38 @@ The `DataMode` enum (`.basic`, `.extended`) governs what payload data is retriev
 
 To start user verification, you must first generate an authentication token via the Metric API. Refer to the [Token Generation API Reference](https://docs.metric.africa/metric-for-developers/apis/generate-tokens) for details.
 
-Once the token is generated, present the SDK launcher:
+### SwiftUI Integration (iOS 13.0+)
+
+The SDK provides a built-in `.metricVerification` view modifier for seamless SwiftUI integration. It handles presentation and outcome callbacks automatically.
+
+```swift
+import SwiftUI
+import MetricSDK
+
+struct ContentView: View {
+    @State private var showVerification = false
+    
+    var body: some View {
+        Button("Verify Identity") {
+            showVerification = true
+        }
+        .metricVerification(isPresented: $showVerification, token: "<Generated Token>") { outcome in
+            switch outcome {
+            case .success(let payload):
+                print("Verification successful! Details: \(payload)")
+            case .failed(let reason):
+                print("Verification failed: \(reason)")
+            default:
+                break
+            }
+        }
+    }
+}
+```
+
+### UIKit Integration
+
+For UIKit applications, present the SDK launcher view controller:
 
 ```swift
 import UIKit
@@ -203,7 +236,7 @@ override func viewDidLoad() {
     NotificationCenter.default.addObserver(
         self,
         selector: #selector(handleVerificationOutcome(_:)),
-        name: NotificationKeys.VERIFICATION_COMPLETE,
+        name: Notification.Name(NotificationKeys.VERIFICATION_COMPLETE),
         object: nil
     )
 }
