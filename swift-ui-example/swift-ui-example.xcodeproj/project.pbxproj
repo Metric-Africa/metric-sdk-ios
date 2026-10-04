@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2CA1F0473072CE870043F503 /* MetricSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 2CA1F0463072CE870043F503 /* MetricSDK */; };
+		2CA1F0723072D2DC0043F503 /* MetricSDKSPM in Frameworks */ = {isa = PBXBuildFile; productRef = 2CA1F0713072D2DC0043F503 /* MetricSDKSPM */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +55,7 @@
 		2CA1F0173072CDEB0043F503 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
-				2CA1F0473072CE870043F503 /* MetricSDK in Frameworks */,
+				2CA1F0723072D2DC0043F503 /* MetricSDKSPM in Frameworks */,
 			);
 		};
 		2CA1F0243072CDEB0043F503 /* Frameworks */ = {
@@ -109,7 +109,7 @@
 			);
 			name = "swift-ui-example";
 			packageProductDependencies = (
-				2CA1F0463072CE870043F503 /* MetricSDK */,
+				2CA1F0713072D2DC0043F503 /* MetricSDKSPM */,
 			);
 			productName = "swift-ui-example";
 			productReference = 2CA1F01A3072CDEB0043F503 /* swift-ui-example.app */;
@@ -190,7 +190,7 @@
 			mainGroup = 2CA1F0113072CDEB0043F503;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				2CA1F0453072CE870043F503 /* XCRemoteSwiftPackageReference "metric-sdk-ios" */,
+				2CA1F0703072D2DC0043F503 /* XCRemoteSwiftPackageReference "metric-sdk-ios" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 2CA1F01B3072CDEB0043F503 /* Products */;
@@ -569,7 +569,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		2CA1F0453072CE870043F503 /* XCRemoteSwiftPackageReference "metric-sdk-ios" */ = {
+		2CA1F0703072D2DC0043F503 /* XCRemoteSwiftPackageReference "metric-sdk-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Metric-Africa/metric-sdk-ios.git";
 			requirement = {
@@ -580,10 +580,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2CA1F0463072CE870043F503 /* MetricSDK */ = {
+		2CA1F0713072D2DC0043F503 /* MetricSDKSPM */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2CA1F0453072CE870043F503 /* XCRemoteSwiftPackageReference "metric-sdk-ios" */;
-			productName = MetricSDK;
+			package = 2CA1F0703072D2DC0043F503 /* XCRemoteSwiftPackageReference "metric-sdk-ios" */;
+			productName = MetricSDKSPM;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
