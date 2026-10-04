@@ -7,6 +7,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.2.1] - 2026-10-03
+
+### Added
+- Swift Package Manager support. Add the `MetricSDKSPM` product; code still uses `import MetricSDK`.
+- iProov (11.0.3) and OZ Liveness SDK (8.7.0, incl. on-device resources) are embedded automatically via SPM.
+
+### Changed
+- Minimum iOS target is 15.0+ for SPM (CocoaPods stays 13.0+).
+- Distribution built as an XCFramework zip via build.sh.
+- README updated with SPM instructions.
+
+### Deprecated
+- CocoaPods gets no further updates; latest pod stays 1.1.0.
+
+### Notes
+- 1.2.0 was an interim SPM release, superseded by 1.2.1.
+
+
+---
+
 ## [1.1.0] - 2026-05-20
 
 ### Removed
