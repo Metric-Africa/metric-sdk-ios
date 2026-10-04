@@ -132,31 +132,50 @@ The `MetricSDKConfiguration` class allows you to tailor the look and behavior of
 
 By default, the SDK runs in `Environment.sandbox`. Set it to `Environment.production` when transitioning to release.
 
-Call `MetricService.configure(_:)` and pass in your configuration model (typically in the `viewDidLoad()` of the view controller launching the SDK):
+### SwiftUI Setup
+For SwiftUI applications, configure the SDK inside your `App` struct's initializer:
+
+```swift
+import SwiftUI
+import MetricSDK
+
+@main
+struct MyApp: App {
+    init() {
+        let config = MetricSDKConfiguration()
+        config.environment = .sandbox
+        config.brandLogoImageUrl = "https://example.com/logo.png"
+        config.brandPrimaryColor = "#000000" // Hex string representation
+        config.dataMode = .extended
+        
+        MetricService.configure(config)
+    }
+
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
+}
+```
+
+### UIKit Setup
+For UIKit applications, configure the SDK typically in your `AppDelegate` or the `viewDidLoad()` of your initial view controller:
 
 ```swift
 import UIKit
 import MetricSDK
 
 class ViewController: UIViewController {
-
-    let config = MetricSDKConfiguration()
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // 1. Set Environment (use .production for live environments)
+        let config = MetricSDKConfiguration()
         config.environment = .sandbox
-        
-        // 2. Customize Branding & Colors
         config.brandLogoImageUrl = "https://example.com/logo.png"
-        config.brandPrimaryColor = "#000000" // Hex string representation
-        
-        // 3. Customize Data Mode
-        // Set to .extended to retrieve customer's name and unique verification ID
+        config.brandPrimaryColor = "#000000"
         config.dataMode = .extended 
         
-        // 4. Apply Configuration
         MetricService.configure(config)
     }
 }
