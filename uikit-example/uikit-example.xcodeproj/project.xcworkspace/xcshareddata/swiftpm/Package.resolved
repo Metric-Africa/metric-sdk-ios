@@ -1,0 +1,33 @@
+{
+  "originHash" : "12f552a0b7c49253ca971180e26a4920773745c92359453d911c736fc997b436",
+  "pins" : [
+    {
+      "identity" : "ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/iProov/ios.git",
+      "state" : {
+        "revision" : "313f835ee44761d79f8abd8f78b62001594c376d",
+        "version" : "11.0.3"
+      }
+    },
+    {
+      "identity" : "metric-sdk-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Metric-Africa/metric-sdk-ios.git",
+      "state" : {
+        "revision" : "a89481091caffaee94e6cfbedb446f1ad1eb2a97",
+        "version" : "1.2.0"
+      }
+    },
+    {
+      "identity" : "oz-mobile-ios-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://gitlab.com/oz-forensics/oz-mobile-ios-sdk.git",
+      "state" : {
+        "revision" : "7c038d95aefbe6ac9a3bd8659038b1c1dfc19344",
+        "version" : "8.7.0"
+      }
+    }
+  ],
+  "version" : 3
+}
