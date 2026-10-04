@@ -8,8 +8,9 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "MetricSDK",
-            targets: ["MetricSDKWrapper"] 
+            name: "MetricSDKSPM",
+            type: .dynamic,
+            targets: ["MetricSDKWrapper"]
         )
     ],
     dependencies: [
@@ -19,7 +20,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "MetricSDK",
-            url: "https://github.com/Metric-Africa/metric-sdk-ios/releases/download/v1.2.0/MetricSDK.zip", 
+            url: "https://github.com/Metric-Africa/metric-sdk-ios/releases/download/v1.2.0/MetricSDK.zip",
             checksum: "a74d36a92ccc0a8314ce4312949ce15bea1e79c6f5bfaa612d762f9e243be2db"
         ),
         .target(
