@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		23127A8EBFFDA1BBB542DD6B /* Pods_MetricSDKExampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B980374C34C3412EB42B634B /* Pods_MetricSDKExampleApp.framework */; };
-		2CA1F0443072CE490043F503 /* MetricSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 2CA1F0433072CE490043F503 /* MetricSDK */; };
+		2CA1F0743072D8040043F503 /* MetricSDKSPM in Frameworks */ = {isa = PBXBuildFile; productRef = 2CA1F0733072D8040043F503 /* MetricSDKSPM */; };
+		2CA1F0753072D8040043F503 /* MetricSDKSPM in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 2CA1F0733072D8040043F503 /* MetricSDKSPM */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		2CA95ABF2AA40F46009A7FB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA95ABE2AA40F46009A7FB6 /* AppDelegate.swift */; };
 		2CA95AC12AA40F46009A7FB6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA95AC02AA40F46009A7FB6 /* SceneDelegate.swift */; };
 		2CA95AC32AA40F46009A7FB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA95AC22AA40F46009A7FB6 /* ViewController.swift */; };
@@ -16,6 +16,20 @@
 		2CA95AC82AA40F48009A7FB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CA95AC72AA40F48009A7FB6 /* Assets.xcassets */; };
 		2CA95ACB2AA40F49009A7FB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CA95AC92AA40F49009A7FB6 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2CA1F0763072D8040043F503 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2CA1F0753072D8040043F503 /* MetricSDKSPM in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2C0ECC6F2AA5EDBC002239DA /* iProov.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = iProov.xcframework; path = Pods/iProov/iProov.xcframework; sourceTree = "<group>"; };
@@ -35,8 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23127A8EBFFDA1BBB542DD6B /* Pods_MetricSDKExampleApp.framework in Frameworks */,
-				2CA1F0443072CE490043F503 /* MetricSDK in Frameworks */,
+				2CA1F0743072D8040043F503 /* MetricSDKSPM in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,12 +102,9 @@
 		2CA95ABA2AA40F46009A7FB6 /* MetricSDKExampleApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2CA95ACF2AA40F49009A7FB6 /* Build configuration list for PBXNativeTarget "MetricSDKExampleApp" */;
-			buildPhases = (
-				F1D5498DB03D6D3B78DF5EF0 /* [CP] Check Pods Manifest.lock */,
-				2CA95AB72AA40F46009A7FB6 /* Sources */,
+			buildPhases = (				2CA95AB72AA40F46009A7FB6 /* Sources */,
 				2CA95AB82AA40F46009A7FB6 /* Frameworks */,
-				2CA95AB92AA40F46009A7FB6 /* Resources */,
-				AAED172216F63031BFA4DB6B /* [CP] Embed Pods Frameworks */,
+				2CA95AB92AA40F46009A7FB6 /* Resources */,				2CA1F0763072D8040043F503 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -102,7 +112,7 @@
 			);
 			name = MetricSDKExampleApp;
 			packageProductDependencies = (
-				2CA1F0433072CE490043F503 /* MetricSDK */,
+				2CA1F0733072D8040043F503 /* MetricSDKSPM */,
 			);
 			productName = MetricSDKExampleApp;
 			productReference = 2CA95ABB2AA40F46009A7FB6 /* MetricSDKExampleApp.app */;
@@ -158,49 +168,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		AAED172216F63031BFA4DB6B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MetricSDKExampleApp/Pods-MetricSDKExampleApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MetricSDKExampleApp/Pods-MetricSDKExampleApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MetricSDKExampleApp/Pods-MetricSDKExampleApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F1D5498DB03D6D3B78DF5EF0 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MetricSDKExampleApp-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -451,10 +418,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2CA1F0433072CE490043F503 /* MetricSDK */ = {
+		2CA1F0733072D8040043F503 /* MetricSDKSPM */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2CA1F0423072CE490043F503 /* XCRemoteSwiftPackageReference "metric-sdk-ios" */;
-			productName = MetricSDK;
+			productName = MetricSDKSPM;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

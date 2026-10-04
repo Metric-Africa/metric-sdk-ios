@@ -9,7 +9,7 @@ struct swift_ui_exampleApp: App {
         Metric.initialize(clientKey: "mtbftwdky8nmDnvvPaJ5", secretKey: "RMp9LLXrRQYcYplZVFowox9PgXpgvT0TAKeiVfKmgQjVh")
         
         let config = MetricSDKConfiguration()
-        config.environment = .sandbox
+        config.environment = .production
         config.brandPrimaryColor = "#000000"
         config.dataMode = .extended
         MetricService.configure(config)
